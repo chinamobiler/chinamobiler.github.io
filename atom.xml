@@ -4,7 +4,7 @@
   <subtitle><![CDATA[测试站]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://chinamobiler.github.io/"/>
-  <updated>2014-12-30T14:34:05.018Z</updated>
+  <updated>2014-12-30T14:35:18.844Z</updated>
   <id>http://chinamobiler.github.io/</id>
   
   <author>
@@ -32,15 +32,19 @@
     <link href="http://chinamobiler.github.io/2014/12-30-test6-cs6/"/>
     <id>http://chinamobiler.github.io/2014/12-30-test6-cs6/</id>
     <published>2014-12-30T14:27:56.000Z</published>
-    <updated>2014-12-30T14:34:00.000Z</updated>
+    <updated>2014-12-30T14:35:03.000Z</updated>
     <content type="html"><![CDATA[]]></content>
     <summary type="html">
     <![CDATA[]]>
     </summary>
     
-      <category term="标签1,标签2" scheme="http://chinamobiler.github.io/tags/%E6%A0%87%E7%AD%BE1-%E6%A0%87%E7%AD%BE2/"/>
+      <category term="标签1" scheme="http://chinamobiler.github.io/tags/%E6%A0%87%E7%AD%BE1/"/>
     
-      <category term="类别1, 类别2" scheme="http://chinamobiler.github.io/categories/%E7%B1%BB%E5%88%AB1-%E7%B1%BB%E5%88%AB2/"/>
+      <category term="标签2" scheme="http://chinamobiler.github.io/tags/%E6%A0%87%E7%AD%BE2/"/>
+    
+      <category term="类别1" scheme="http://chinamobiler.github.io/categories/%E7%B1%BB%E5%88%AB1/"/>
+    
+      <category term="类别2" scheme="http://chinamobiler.github.io/categories/%E7%B1%BB%E5%88%AB1/%E7%B1%BB%E5%88%AB2/"/>
     
   </entry>
   
@@ -75,13 +79,15 @@
     <link href="http://chinamobiler.github.io/2014/12-30-test4-ceshi4/"/>
     <id>http://chinamobiler.github.io/2014/12-30-test4-ceshi4/</id>
     <published>2014-12-30T14:13:52.000Z</published>
-    <updated>2014-12-30T14:33:46.000Z</updated>
+    <updated>2014-12-30T14:35:13.000Z</updated>
     <content type="html"><![CDATA[]]></content>
     <summary type="html">
     <![CDATA[]]>
     </summary>
     
-      <category term="标签1,标签2" scheme="http://chinamobiler.github.io/tags/%E6%A0%87%E7%AD%BE1-%E6%A0%87%E7%AD%BE2/"/>
+      <category term="标签1" scheme="http://chinamobiler.github.io/tags/%E6%A0%87%E7%AD%BE1/"/>
+    
+      <category term="标签2" scheme="http://chinamobiler.github.io/tags/%E6%A0%87%E7%AD%BE2/"/>
     
   </entry>
   
