@@ -3,13 +3,61 @@
 
     
   <url>
+    <loc>http://chinamobiler.github.io/2014/12-30-test6-cs6/</loc>
+    <lastmod>2014-12-30T14:32:30.000Z</lastmod>
+    <data>
+        <display>
+        <title>test6 cs6</title>
+        <pubTime>2014-12-30T14:27:56.000Z</pubTime>
+        
+        <tag>标签1 </tag>
+         
+        <tag>标签2 </tag>
+         
+         <content><![CDATA[]]></content>
+         
+         
+           
+             
+              <breadCrumb title="类别1" url="http://chinamobiler.github.io/categories/%E7%B1%BB%E5%88%AB1/"/>
+          
+             
+              <breadCrumb title="类别2" url="http://chinamobiler.github.io/categories/%E7%B1%BB%E5%88%AB1/%E7%B1%BB%E5%88%AB2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://chinamobiler.github.io/2014/12-30-test3-photo/</loc>
-    <lastmod>2014-12-30T14:29:20.000Z</lastmod>
+    <lastmod>2014-12-30T14:31:37.000Z</lastmod>
     <data>
         <display>
         <title>test3-photo</title>
         <pubTime>2014-12-30T03:00:45.000Z</pubTime>
         
+        <tag>标签1,标签2 </tag>
+         
+         <content><![CDATA[]]></content>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://chinamobiler.github.io/2014/12-30-test4-ceshi4/</loc>
+    <lastmod>2014-12-30T14:31:25.000Z</lastmod>
+    <data>
+        <display>
+        <title>test4 ceshi4</title>
+        <pubTime>2014-12-30T14:13:52.000Z</pubTime>
+        
+        <tag>标签1,标签2 </tag>
+         
          <content><![CDATA[]]></content>
          
          
@@ -27,52 +75,6 @@
         <title>test6 cs6</title>
         <pubTime>2014-12-30T14:28:51.000Z</pubTime>
         
-         <content><![CDATA[]]></content>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://chinamobiler.github.io/2014/12-30-test6-cs6/</loc>
-    <lastmod>2014-12-30T14:28:30.000Z</lastmod>
-    <data>
-        <display>
-        <title>test6 cs6</title>
-        <pubTime>2014-12-30T14:27:56.000Z</pubTime>
-        
-        <tag>hexo </tag>
-         
-        <tag>tags </tag>
-         
-         <content><![CDATA[]]></content>
-         
-         
-           
-             
-              <breadCrumb title="hexo c" url="http://chinamobiler.github.io/categories/hexo-c/"/>
-          
-             
-              <breadCrumb title="categories" url="http://chinamobiler.github.io/categories/hexo-c/categories/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://chinamobiler.github.io/2014/12-30-test4-ceshi4/</loc>
-    <lastmod>2014-12-30T14:26:24.000Z</lastmod>
-    <data>
-        <display>
-        <title>test4 ceshi4</title>
-        <pubTime>2014-12-30T14:13:52.000Z</pubTime>
-        
-        <tag>tags1,tags2 </tag>
-         
          <content><![CDATA[]]></content>
          
          
