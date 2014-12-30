@@ -4,7 +4,7 @@
   <subtitle><![CDATA[测试站]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://chinamobiler.github.io/"/>
-  <updated>2014-12-30T14:29:00.328Z</updated>
+  <updated>2014-12-30T14:29:31.643Z</updated>
   <id>http://chinamobiler.github.io/</id>
   
   <author>
@@ -138,17 +138,10 @@
     <link href="http://chinamobiler.github.io/2014/12-30-test3-photo/"/>
     <id>http://chinamobiler.github.io/2014/12-30-test3-photo/</id>
     <published>2014-12-30T03:00:45.000Z</published>
-    <updated>2014-12-30T03:01:42.000Z</updated>
-    <content type="html"><![CDATA[<p>photos:</p>
-<ul>
-<li><a href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-0.jpg" target="_blank" rel="external">http://bruce.u.qiniudn.com/2013/11/27/reading/photos-0.jpg</a></li>
-<li><a href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" target="_blank" rel="external">http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg</a></li>
-</ul>
-]]></content>
+    <updated>2014-12-30T14:29:20.000Z</updated>
+    <content type="html"><![CDATA[]]></content>
     <summary type="html">
-    <![CDATA[<p>photos:</p>
-<ul>
-<li><a href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-0.jpg" target="_blank" rel="external">http://bruce.u.q]]>
+    <![CDATA[]]>
     </summary>
     
   </entry>
