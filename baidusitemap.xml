@@ -3,6 +3,27 @@
 
     
   <url>
+    <loc>http://chinamobiler.github.io/2014/12-30-test3-photo/</loc>
+    <lastmod>2014-12-30T14:36:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>test3-photo</title>
+        <pubTime>2014-12-30T03:00:45.000Z</pubTime>
+        
+        <tag>标签1 </tag>
+         
+        <tag>标签2 </tag>
+         
+         <content><![CDATA[]]></content>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://chinamobiler.github.io/2014/12-30-test4-ceshi4/</loc>
     <lastmod>2014-12-30T14:35:13.000Z</lastmod>
     <data>
@@ -45,25 +66,6 @@
              
               <breadCrumb title="类别2" url="http://chinamobiler.github.io/categories/%E7%B1%BB%E5%88%AB1/%E7%B1%BB%E5%88%AB2/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://chinamobiler.github.io/2014/12-30-test3-photo/</loc>
-    <lastmod>2014-12-30T14:31:37.000Z</lastmod>
-    <data>
-        <display>
-        <title>test3-photo</title>
-        <pubTime>2014-12-30T03:00:45.000Z</pubTime>
-        
-        <tag>标签1,标签2 </tag>
-         
-         <content><![CDATA[]]></content>
-         
-         
-           
         </display>
     </data>
     </url>
