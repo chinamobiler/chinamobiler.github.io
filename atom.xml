@@ -4,7 +4,7 @@
   <subtitle><![CDATA[测试站]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://chinamobiler.github.io/"/>
-  <updated>2014-12-30T03:26:34.077Z</updated>
+  <updated>2014-12-30T04:33:18.197Z</updated>
   <id>http://chinamobiler.github.io/</id>
   
   <author>
@@ -13,6 +13,19 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[about]]></title>
+    <link href="http://chinamobiler.github.io/2014/12-30-about/"/>
+    <id>http://chinamobiler.github.io/2014/12-30-about/</id>
+    <published>2014-12-30T03:29:46.000Z</published>
+    <updated>2014-12-30T03:30:53.000Z</updated>
+    <content type="html"><![CDATA[]]></content>
+    <summary type="html">
+    <![CDATA[]]>
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Hello World]]></title>
