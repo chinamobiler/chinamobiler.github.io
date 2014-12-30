@@ -1,103 +1,78 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[吸塑包装]]></title>
-  <subtitle><![CDATA[测试站]]></subtitle>
-  <link href="/atom.xml" rel="self"/>
-  <link href="http://chinamobiler.github.io/"/>
-  <updated>2014-12-30T13:55:55.833Z</updated>
-  <id>http://chinamobiler.github.io/</id>
-  
-  <author>
-    <name><![CDATA[塑料er]]></name>
-    <email><![CDATA[chinamobiler@gmail.com]]></email>
-  </author>
-  
-  <generator uri="http://zespia.tw/hexo/">Hexo</generator>
-  
-  <entry>
-    <title><![CDATA[about]]></title>
-    <link href="http://chinamobiler.github.io/2014/12-30-about/"/>
-    <id>http://chinamobiler.github.io/2014/12-30-about/</id>
-    <published>2014-12-30T03:29:46.000Z</published>
-    <updated>2014-12-30T03:30:53.000Z</updated>
-    <content type="html"><![CDATA[]]></content>
-    <summary type="html">
-    <![CDATA[]]>
-    </summary>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
     
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <link href="http://chinamobiler.github.io/2014/12-30-hello-world/"/>
-    <id>http://chinamobiler.github.io/2014/12-30-hello-world/</id>
-    <published>2014-12-30T03:05:54.000Z</published>
-    <updated>2014-12-21T12:49:04.000Z</updated>
-    <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2>
-<h3 id="Create_a_new_post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io]]>
-    </summary>
     
-  </entry>
-  
-  <entry>
-    <title><![CDATA[test3-photo]]></title>
-    <link href="http://chinamobiler.github.io/2014/12-30-test3-photo/"/>
-    <id>http://chinamobiler.github.io/2014/12-30-test3-photo/</id>
-    <published>2014-12-30T03:00:45.000Z</published>
-    <updated>2014-12-30T03:01:42.000Z</updated>
-    <content type="html"><![CDATA[<p>photos:</p>
+    
+    
+    
+  <url>
+    <loc>http://chinamobiler.github.io/2014/12-30-about/</loc>
+    <lastmod>2014-12-30T03:30:53.000Z</lastmod>
+    <data>
+        <display>
+        <title>about</title>
+        <pubTime>2014-12-30T03:29:46.000Z</pubTime>
+        
+         <content><![CDATA[]]></content>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://chinamobiler.github.io/2014/12-30-test3-photo/</loc>
+    <lastmod>2014-12-30T03:01:42.000Z</lastmod>
+    <data>
+        <display>
+        <title>test3-photo</title>
+        <pubTime>2014-12-30T03:00:45.000Z</pubTime>
+        
+         <content><![CDATA[<p>photos:</p>
 <ul>
 <li><a href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-0.jpg" target="_blank" rel="external">http://bruce.u.qiniudn.com/2013/11/27/reading/photos-0.jpg</a></li>
 <li><a href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" target="_blank" rel="external">http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg</a></li>
 </ul>
 ]]></content>
-    <summary type="html">
-    <![CDATA[<p>photos:</p>
-<ul>
-<li><a href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-0.jpg" target="_blank" rel="external">http://bruce.u.q]]>
-    </summary>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
     
-  </entry>
-  
-  <entry>
-    <title><![CDATA[test2]]></title>
-    <link href="http://chinamobiler.github.io/2014/12-30-test2/"/>
-    <id>http://chinamobiler.github.io/2014/12-30-test2/</id>
-    <published>2014-12-30T03:00:22.000Z</published>
-    <updated>2014-12-30T03:00:22.000Z</updated>
-    <content type="html"><![CDATA[]]></content>
-    <summary type="html">
-    <![CDATA[]]>
-    </summary>
+  <url>
+    <loc>http://chinamobiler.github.io/2014/12-30-test2/</loc>
+    <lastmod>2014-12-30T03:00:22.000Z</lastmod>
+    <data>
+        <display>
+        <title>test2</title>
+        <pubTime>2014-12-30T03:00:22.000Z</pubTime>
+        
+         <content><![CDATA[]]></content>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
     
-  </entry>
-  
-  <entry>
-    <title><![CDATA[测试MD的语法]]></title>
-    <link href="http://chinamobiler.github.io/2014/12-22-xinjianwenzhang/"/>
-    <id>http://chinamobiler.github.io/2014/12-22-xinjianwenzhang/</id>
-    <published>2014-12-22T15:16:23.000Z</published>
-    <updated>2014-12-27T13:24:26.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="大字一">大字一</h1>
+    
+    
+  <url>
+    <loc>http://chinamobiler.github.io/2014/12-22-xinjianwenzhang/</loc>
+    <lastmod>2014-12-27T13:24:26.000Z</lastmod>
+    <data>
+        <display>
+        <title>测试MD的语法</title>
+        <pubTime>2014-12-22T15:16:23.000Z</pubTime>
+        
+         <content><![CDATA[<h1 id="大字一">大字一</h1>
 <p>内容测试。</p>
 <h2 id="大字二">大字二</h2>
 <ul>
@@ -121,23 +96,23 @@
 <li><strong>[hexo-theme-landscape-plus]</strong> - The demo site of Landscape-plus theme.</li>
 </ul>
 ]]></content>
-    <summary type="html">
-    <![CDATA[<h1 id="大字一">大字一</h1>
-<p>内容测试。</p>
-<h2 id="大字二">大字二</h2>
-<ul>
-<li>写几个<strong>粗体字</strong>测试。=&gt; <a href="https://github.com/chinamobiler" ]]>
-    </summary>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
     
-  </entry>
-  
-  <entry>
-    <title><![CDATA[test1]]></title>
-    <link href="http://chinamobiler.github.io/2014/12-22-test1/"/>
-    <id>http://chinamobiler.github.io/2014/12-22-test1/</id>
-    <published>2014-12-22T13:13:32.000Z</published>
-    <updated>2014-12-27T13:03:22.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="Landscape_plus">Landscape plus</h1>
+  <url>
+    <loc>http://chinamobiler.github.io/2014/12-22-test1/</loc>
+    <lastmod>2014-12-27T13:03:22.000Z</lastmod>
+    <data>
+        <display>
+        <title>test1</title>
+        <pubTime>2014-12-22T13:13:32.000Z</pubTime>
+        
+         <content><![CDATA[<h1 id="Landscape_plus">Landscape plus</h1>
 <p>针对中国大陆地区对hexo官方主题landscape进行优化。</p>
 <h2 id="所有新特性">所有新特性</h2>
 <ul>
@@ -271,14 +246,46 @@
 </ul>
 <p>如果你的网站正在使用<strong>landscape-plus</strong>主题，欢迎将网址添加到<a href="https://github.com/xiangming/landscape-plus/wiki" target="_blank" rel="external">wiki的网站列表</a>，我会不定期进行整理。</p>
 ]]></content>
-    <summary type="html">
-    <![CDATA[<h1 id="Landscape_plus">Landscape plus</h1>
-<p>针对中国大陆地区对hexo官方主题landscape进行优化。</p>
-<h2 id="所有新特性">所有新特性</h2>
-<ul>
-<li>根据国情，<strong>去掉Google的]]>
-    </summary>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
     
-  </entry>
-  
-</feed>
+  <url>
+    <loc>http://chinamobiler.github.io/2014/12-30-hello-world/</loc>
+    <lastmod>2014-12-21T12:49:04.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2014-12-30T03:05:54.000Z</pubTime>
+        
+         <content><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick_Start">Quick Start</h2>
+<h3 id="Create_a_new_post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run_server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate_static_files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+</urlset>
