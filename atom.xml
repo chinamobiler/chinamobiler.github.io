@@ -1,106 +1,26 @@
-
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[吸塑包装]]></title>
+  <subtitle><![CDATA[测试站]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://chinamobiler.github.io/"/>
+  <updated>2014-12-30T03:26:34.077Z</updated>
+  <id>http://chinamobiler.github.io/</id>
   
-  <title>Archives: 2014/12 | 吸塑包装</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="测1，测2">
-<meta property="og:type" content="website">
-<meta property="og:title" content="吸塑包装">
-<meta property="og:url" content="http://chinamobiler.github.io/archives/2014/12/">
-<meta property="og:site_name" content="吸塑包装">
-<meta property="og:description" content="测1，测2">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="吸塑包装">
-<meta name="twitter:description" content="测1，测2">
-
+  <author>
+    <name><![CDATA[塑料er]]></name>
+    <email><![CDATA[chinamobiler@gmail.com]]></email>
+  </author>
   
-    <link rel="alternative" href="/atom.xml" title="吸塑包装" type="application/atom+xml">
+  <generator uri="http://zespia.tw/hexo/">Hexo</generator>
   
-  
-    <link rel="icon" href="/favicon.png">
-  
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
-
-  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
-  
-</head>
-<body>
-<div id="container">
-  <div id="wrap">
-    <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">吸塑包装</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">测试站</a>
-        </h2>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-          <a class="main-nav-link" href="/news">News</a>
-        
-          <a class="main-nav-link" href="/sitemap.xml">nav</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
-          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
-          <input type="submit" value="" class="search-form-submit">
-          <input name=tn type=hidden value="bds">
-          <input name=cl type=hidden value="3">
-          <input name=ct type=hidden value="2097152">
-          <input type="hidden" name="si" value="chinamobiler.github.io">
-        </form>
-      </div>
-    </div>
-  </div>
-</header>
-    <div class="outer">
-      <section id="main">
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2014/12-30-hello-world/" class="article-date">
-  <time datetime="2014-12-30T03:05:54.000Z" itemprop="datePublished">12月 30 2014</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/12-30-hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <link href="http://chinamobiler.github.io/2014/12-30-hello-world/"/>
+    <id>http://chinamobiler.github.io/2014/12-30-hello-world/</id>
+    <published>2014-12-30T03:05:54.000Z</published>
+    <updated>2014-12-21T12:49:04.000Z</updated>
+    <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick_Start">Quick Start</h2>
 <h3 id="Create_a_new_post">Create a new post</h3>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
@@ -118,132 +38,53 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
 
 <p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-        <a data-url="http://chinamobiler.github.io/2014/12-30-hello-world/" data-id="xt38benajk6ftmsd" class="article-share-link" data-share="baidu">分享到</a>
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="photo-test3-photo" class="article article-type-photo" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2014/12-30-test3-photo/" class="article-date">
-  <time datetime="2014-12-30T03:00:45.000Z" itemprop="datePublished">12月 30 2014</time>
-</a>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io]]>
+    </summary>
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+  </entry>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/12-30-test3-photo/">test3-photo</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>photos:</p>
+  <entry>
+    <title><![CDATA[test3-photo]]></title>
+    <link href="http://chinamobiler.github.io/2014/12-30-test3-photo/"/>
+    <id>http://chinamobiler.github.io/2014/12-30-test3-photo/</id>
+    <published>2014-12-30T03:00:45.000Z</published>
+    <updated>2014-12-30T03:01:42.000Z</updated>
+    <content type="html"><![CDATA[<p>photos:</p>
 <ul>
 <li><a href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-0.jpg" target="_blank" rel="external">http://bruce.u.qiniudn.com/2013/11/27/reading/photos-0.jpg</a></li>
 <li><a href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" target="_blank" rel="external">http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg</a></li>
 </ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-        <a data-url="http://chinamobiler.github.io/2014/12-30-test3-photo/" data-id="l01iuvsyafqwkr66" class="article-share-link" data-share="baidu">分享到</a>
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="postname-test2" class="article article-type-postname" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2014/12-30-test2/" class="article-date">
-  <time datetime="2014-12-30T03:00:22.000Z" itemprop="datePublished">12月 30 2014</time>
-</a>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>photos:</p>
+<ul>
+<li><a href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-0.jpg" target="_blank" rel="external">http://bruce.u.q]]>
+    </summary>
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+  </entry>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/12-30-test2/">test2</a>
-    </h1>
-  
-
-      </header>
+  <entry>
+    <title><![CDATA[test2]]></title>
+    <link href="http://chinamobiler.github.io/2014/12-30-test2/"/>
+    <id>http://chinamobiler.github.io/2014/12-30-test2/</id>
+    <published>2014-12-30T03:00:22.000Z</published>
+    <updated>2014-12-30T03:00:22.000Z</updated>
+    <content type="html"><![CDATA[]]></content>
+    <summary type="html">
+    <![CDATA[]]>
+    </summary>
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      
-        <a data-url="http://chinamobiler.github.io/2014/12-30-test2/" data-id="rmdgmte80ugy220z" class="article-share-link" data-share="baidu">分享到</a>
-      
-
-      
-
-      
-    </footer>
-  </div>
+  </entry>
   
-</article>
-
-
-  
-    <article id="post-xinjianwenzhang" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2014/12-22-xinjianwenzhang/" class="article-date">
-  <time datetime="2014-12-22T15:16:23.000Z" itemprop="datePublished">12月 22 2014</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/12-22-xinjianwenzhang/">测试MD的语法</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="大字一">大字一</h1>
+  <entry>
+    <title><![CDATA[测试MD的语法]]></title>
+    <link href="http://chinamobiler.github.io/2014/12-22-xinjianwenzhang/"/>
+    <id>http://chinamobiler.github.io/2014/12-22-xinjianwenzhang/</id>
+    <published>2014-12-22T15:16:23.000Z</published>
+    <updated>2014-12-27T13:24:26.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="大字一">大字一</h1>
 <p>内容测试。</p>
 <h2 id="大字二">大字二</h2>
 <ul>
@@ -266,47 +107,24 @@
 <ul>
 <li><strong>[hexo-theme-landscape-plus]</strong> - The demo site of Landscape-plus theme.</li>
 </ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-        <a data-url="http://chinamobiler.github.io/2014/12-22-xinjianwenzhang/" data-id="svs321aawm23w85c" class="article-share-link" data-share="baidu">分享到</a>
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-test1" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2014/12-22-test1/" class="article-date">
-  <time datetime="2014-12-22T13:13:32.000Z" itemprop="datePublished">12月 22 2014</time>
-</a>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="大字一">大字一</h1>
+<p>内容测试。</p>
+<h2 id="大字二">大字二</h2>
+<ul>
+<li>写几个<strong>粗体字</strong>测试。=&gt; <a href="https://github.com/chinamobiler" ]]>
+    </summary>
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+  </entry>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/12-22-test1/">test1</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Landscape_plus">Landscape plus</h1>
+  <entry>
+    <title><![CDATA[test1]]></title>
+    <link href="http://chinamobiler.github.io/2014/12-22-test1/"/>
+    <id>http://chinamobiler.github.io/2014/12-22-test1/</id>
+    <published>2014-12-22T13:13:32.000Z</published>
+    <updated>2014-12-27T13:03:22.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="Landscape_plus">Landscape plus</h1>
 <p>针对中国大陆地区对hexo官方主题landscape进行优化。</p>
 <h2 id="所有新特性">所有新特性</h2>
 <ul>
@@ -439,151 +257,15 @@
 <li><strong><a href="http://www.peng8.net/" target="_blank" rel="external">peng8.net</a></strong> - peng8.net 技术博客.</li>
 </ul>
 <p>如果你的网站正在使用<strong>landscape-plus</strong>主题，欢迎将网址添加到<a href="https://github.com/xiangming/landscape-plus/wiki" target="_blank" rel="external">wiki的网站列表</a>，我会不定期进行整理。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-        <a data-url="http://chinamobiler.github.io/2014/12-22-test1/" data-id="coiv5coyqucivnkh" class="article-share-link" data-share="baidu">分享到</a>
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-  
-</section>
-      
-      <aside id="sidebar">
-  
+]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="Landscape_plus">Landscape plus</h1>
+<p>针对中国大陆地区对hexo官方主题landscape进行优化。</p>
+<h2 id="所有新特性">所有新特性</h2>
+<ul>
+<li>根据国情，<strong>去掉Google的]]>
+    </summary>
     
+  </entry>
   
-    
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">December 2014</a><span class="archive-list-count">5</span></li></ul>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">近期文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2014/12-30-hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2014/12-30-test3-photo/">test3-photo</a>
-          </li>
-        
-          <li>
-            <a href="/2014/12-30-test2/">test2</a>
-          </li>
-        
-          <li>
-            <a href="/2014/12-22-xinjianwenzhang/">测试MD的语法</a>
-          </li>
-        
-          <li>
-            <a href="/2014/12-22-test1/">test1</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">友情链接</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="http://xiguabaobao.com" target="_blank">主题作者</a>
-          </li>
-        
-          <li>
-            <a href="http://reqianduan.com" target="_blank">热前端</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-      
-    </div>
-    <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2014 塑料er<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-      .
-      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape-plus</a>
-    </div>
-  </div>
-</footer>
-  </div>
-  <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-    <a href="/news" class="mobile-nav-link">News</a>
-  
-    <a href="/sitemap.xml" class="mobile-nav-link">nav</a>
-  
-</nav>
-  <!-- totop start -->
-<div id="totop">
-<a title="返回顶部"><img src="/img/scrollup.png"/></a>
-</div>
-
-<!-- totop end -->
-
-
-<!-- 百度分享 start -->
-
-<div id="article-share-box" class="article-share-box">
-  <div id="bdshare" class="bdsharebuttonbox article-share-links">
-    <a class="article-share-weibo" data-cmd="tsina" title="分享到新浪微博"></a>
-    <a class="article-share-weixin" data-cmd="weixin" title="分享到微信"></a>
-    <a class="article-share-qq" data-cmd="sqq" title="分享到QQ"></a>
-    <a class="article-share-renren" data-cmd="renren" title="分享到人人网"></a>
-    <a class="article-share-more" data-cmd="more" title="更多"></a>
-  </div>
-</div>
-<script>window._bd_share_config={"common":{},"share":{"bdCustomStyle":"nocss.css"}};with(document)0[(getElementsByTagName("head")[0]||body).appendChild(createElement("script")).src="http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion="+~(-new Date()/36e5)];</script>
-
-<!-- 百度分享 end -->
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-
-
-
-<script src="/js/script.js" type="text/javascript"></script>
-
-
-</div>
-</body>
-</html>
+</feed>
