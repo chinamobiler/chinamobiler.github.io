@@ -4,7 +4,7 @@
   <subtitle><![CDATA[测试站]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://chinamobiler.github.io/"/>
-  <updated>2014-12-30T14:54:05.865Z</updated>
+  <updated>2014-12-30T14:57:26.537Z</updated>
   <id>http://chinamobiler.github.io/</id>
   
   <author>
@@ -45,32 +45,6 @@
       <category term="类别1" scheme="http://chinamobiler.github.io/categories/%E7%B1%BB%E5%88%AB1/"/>
     
       <category term="类别2" scheme="http://chinamobiler.github.io/categories/%E7%B1%BB%E5%88%AB1/%E7%B1%BB%E5%88%AB2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[test5]]></title>
-    <link href="http://chinamobiler.github.io/2014/12-30-test5-1/"/>
-    <id>http://chinamobiler.github.io/2014/12-30-test5-1/</id>
-    <published>2014-12-30T14:22:22.000Z</published>
-    <updated>2014-12-30T14:22:22.000Z</updated>
-    <content type="html"><![CDATA[]]></content>
-    <summary type="html">
-    <![CDATA[]]>
-    </summary>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[test5]]></title>
-    <link href="http://chinamobiler.github.io/2014/12-30-test5/"/>
-    <id>http://chinamobiler.github.io/2014/12-30-test5/</id>
-    <published>2014-12-30T14:22:08.000Z</published>
-    <updated>2014-12-30T14:22:08.000Z</updated>
-    <content type="html"><![CDATA[]]></content>
-    <summary type="html">
-    <![CDATA[]]>
-    </summary>
     
   </entry>
   
