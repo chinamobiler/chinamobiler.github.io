@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://chinamobiler.github.io/404.html</loc>
+    <lastmod>2014-12-30T13:04:06.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://chinamobiler.github.io/products/index.html</loc>
     <lastmod>2014-12-30T04:00:28.000Z</lastmod>
   </url>
