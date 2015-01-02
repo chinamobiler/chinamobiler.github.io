@@ -191,7 +191,7 @@ body {
   }
 }
 #main {
-  float: right;
+  float: left;
 }
 .article-date,
 .article-category-link,
