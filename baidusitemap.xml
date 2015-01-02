@@ -847,7 +847,7 @@
               <breadCrumb title="类别1" url="http://www.suliaobaozhuang.net/c/%E7%B1%BB%E5%88%AB1/"/>
           
              
-              <breadCrumb title="类别2" url="http://www.suliaobaozhuang.net/c/%E7%B1%BB%E5%88%AB2/"/>
+              <breadCrumb title="类别2" url="http://www.suliaobaozhuang.net/c/%E7%B1%BB%E5%88%AB1/%E7%B1%BB%E5%88%AB2/"/>
           
         </display>
     </data>
@@ -3178,100 +3178,9 @@
     </url>
 
     
-  <url>
-    <loc>http://www.suliaobaozhuang.net/products/p1.html</loc>
-    <lastmod>2014-12-30T13:40:48.000Z</lastmod>
-    <data>
-        <display>
-        <title>products p1</title>
-        <pubTime>2014-12-30T04:00:28.000Z</pubTime>
-        
-         <content><![CDATA[<p>categories:</p>
-<ul>
-<li>Diary<br>tags:</li>
-<li>PS3</li>
-<li>Games</li>
-</ul>
-]]></content>
-         
-         
-        </display>
-    </data>
-    </url>
-
     
-  <url>
-    <loc>http://www.suliaobaozhuang.net/products/index.html</loc>
-    <lastmod>2014-12-30T13:38:37.000Z</lastmod>
-    <data>
-        <display>
-        <title>products</title>
-        <pubTime>2014-12-30T04:00:28.000Z</pubTime>
-        
-         <content><![CDATA[]]></content>
-         
-         
-        </display>
-    </data>
-    </url>
-
     
-  <url>
-    <loc>http://www.suliaobaozhuang.net/products/p2.html</loc>
-    <lastmod>2014-12-30T13:37:59.000Z</lastmod>
-    <data>
-        <display>
-        <title>products p2</title>
-        <pubTime>2014-12-30T04:00:28.000Z</pubTime>
-        
-         <content><![CDATA[<p>categories:</p>
-<ul>
-<li>Diary<br>tags:</li>
-<li>PS3</li>
-<li>Games</li>
-</ul>
-]]></content>
-         
-         
-        </display>
-    </data>
-    </url>
-
     
-  <url>
-    <loc>http://www.suliaobaozhuang.net/404.html</loc>
-    <lastmod>2014-12-30T13:31:37.000Z</lastmod>
-    <data>
-        <display>
-        <title></title>
-        <pubTime>2014-12-30T13:02:49.000Z</pubTime>
-        
-         <content><![CDATA[<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>404</title>
-</head>
-<body>
-<div id="container">
-  
-  
-    <h1>
-      <a href="/2014/12-30-about/">404</a>
-    </h1>
-  
-
-
-</div>
-</body>
-</html>
-]]></content>
-         
-         
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>http://www.suliaobaozhuang.net/2014/12/30-about.html</loc>
@@ -3290,45 +3199,7 @@
     </url>
 
     
-  <url>
-    <loc>http://www.suliaobaozhuang.net/news/index.html</loc>
-    <lastmod>2014-12-30T02:24:39.000Z</lastmod>
-    <data>
-        <display>
-        <title>新闻1</title>
-        <pubTime>2014-12-22T15:16:43.000Z</pubTime>
-        
-         <content><![CDATA[<h3 id="内容如下">内容如下</h3>
-<figure class="highlight 123"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">abc</span></div></pre></td></tr></table></figure>
-
-<p>More News: <a href="/news/news1.html">More</a></p>
-]]></content>
-         
-         
-        </display>
-    </data>
-    </url>
-
     
-  <url>
-    <loc>http://www.suliaobaozhuang.net/news/news1.html</loc>
-    <lastmod>2014-12-30T02:24:13.000Z</lastmod>
-    <data>
-        <display>
-        <title>新闻2</title>
-        <pubTime>2014-12-22T15:16:43.000Z</pubTime>
-        
-         <content><![CDATA[<h3 id="我是谁">我是谁</h3>
-<figure class="highlight 大力神"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Dalis</div></pre></td></tr></table></figure>
-
-<p>更多: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">点击</a></p>
-]]></content>
-         
-         
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>http://www.suliaobaozhuang.net/2014/12/22-xinjianwenzhang.html</loc>
