@@ -3,6 +3,261 @@
 
     
   <url>
+    <loc>http://www.suliaobaozhuang.net/2014/12/22-test1.html</loc>
+    <lastmod>2015-01-02T13:37:29.000Z</lastmod>
+    <data>
+        <display>
+        <title>test1</title>
+        <pubTime>2014-12-22T13:13:32.000Z</pubTime>
+        
+         <content><![CDATA[<h1 id="Landscape_plus">Landscape plus</h1>
+<p>针对中国大陆地区对hexo官方主题landscape进行优化。</p>
+<h2 id="所有新特性">所有新特性</h2>
+<ul>
+<li>根据国情，<strong>去掉Google的库</strong>，改用cloudflare的cdn，打开页面不再卡住了。=&gt; <a href="https://github.com/xiangming/landscape-plus/issues/3" target="_blank" rel="external">参与国内cdn的讨论</a></li>
+<li>增加了 <strong>语言包</strong> 。（支持英文、中文简体和中文繁体。）</li>
+<li>代码高亮，<strong>采用Monokai</strong>，熟悉SublimeText的朋友一定不陌生。</li>
+<li>增加了 <strong>友情链接</strong> widget。（已默认开启，修改方法看下面的<a href="#常见问题">常见问题</a>。）</li>
+<li>不使用header里面的大图，节省带宽，页面加载更快。（大图文件还在，恢复方法看下面的<a href="#常见问题">常见问题</a>。）</li>
+<li>修改了原主题的 <strong>配色</strong> 和部分markdown样式（blockquote/code…）</li>
+<li>集成 <strong>多说评论模块</strong> 。（开启方法看下面的<a href="#常见问题">常见问题</a>。）</li>
+<li>集成 <strong>百度分享模块</strong> 。（已默认开启，详情看下面的<a href="#常见问题">常见问题</a>。）</li>
+<li>增加对 <strong>IE8</strong> 的支持。</li>
+<li>集成 <strong>mathjax</strong>，即latex数学公式的支持。（感谢 @Svtter 的<a href="https://github.com/xiangming/landscape-plus/pull/35" target="_blank" rel="external">pull request</a>）</li>
+</ul>
+<p>主题还在调整中，欢迎<a href="https://github.com/xiangming/landscape-plus/issues/new" target="_blank" rel="external">open issue</a>来提建议，参与讨论。</p>
+<a id="more"></a>
+
+<h2 id="文档目录">文档目录</h2>
+<ul>
+<li><a href="#演示">演示</a></li>
+<li><a href="#安装">安装</a></li>
+<li><a href="#启用">启用</a></li>
+<li><a href="#更新">更新</a></li>
+<li><a href="#配置">配置</a></li>
+<li><a href="#常见问题">常见问题</a></li>
+<li><a href="#更新日志">更新日志</a></li>
+<li><a href="#网站列表">网站列表</a></li>
+</ul>
+<h2 id="演示"><a name="演示">演示</a></h2>
+<p>你可以点击<a href="http://jasonxiang.com/landscape-plus/" target="_blank" rel="external">这里</a>，查看演示。</p>
+<h2 id="安装"><a name="安装">安装</a></h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git clone https://github.com/xiangming/landscape-plus.git themes/landscape-plus</div></pre></td></tr></table></figure>
+
+<p><strong>Landscape plus 需要 Hexo 2.7 及以上版本.</strong></p>
+<h2 id="启用"><a name="启用">启用</a></h2>
+<p>修改主题的设置文件<code>_config.yml</code>，把<code>theme</code>的值设置为<code>landscape-plus</code></p>
+<h2 id="更新"><a name="更新">更新</a></h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> themes/landscape-plus</div><div class="line">git pull</div></pre></td></tr></table></figure>
+
+<h2 id="配置"><a name="配置">配置</a></h2>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line"><span class="preprocessor"># Header</span></div><div class="line"><span class="label">menu:</span></div><div class="line">  Home: /</div><div class="line">  Archives: /archives</div><div class="line"><span class="label">rss:</span> /atom.xml</div><div class="line"></div><div class="line"><span class="preprocessor"># Content</span></div><div class="line"><span class="label">excerpt_link:</span> Read More</div><div class="line"><span class="label">fancybox:</span> false</div><div class="line"></div><div class="line"><span class="preprocessor"># Sidebar</span></div><div class="line"><span class="label">sidebar:</span> right</div><div class="line"><span class="label">widgets:</span></div><div class="line">- category</div><div class="line">- tag</div><div class="line">- tagcloud</div><div class="line">- archive</div><div class="line">- recent_posts</div><div class="line">- links</div><div class="line"></div><div class="line"><span class="preprocessor"># Links</span></div><div class="line"><span class="label">links:</span></div><div class="line">  主题作者: http://xiguabaobao.com</div><div class="line">  热前端: http://reqianduan.com</div><div class="line"></div><div class="line"><span class="preprocessor"># Miscellaneous</span></div><div class="line"><span class="label">google_analytics:</span></div><div class="line"><span class="label">favicon:</span> /favicon.png</div><div class="line"><span class="label">twitter:</span></div><div class="line"><span class="label">google_plus:</span></div><div class="line"><span class="label">fb_admins:</span> </div><div class="line"><span class="label">fb_app_id:</span></div><div class="line"></div><div class="line"><span class="preprocessor"># Duoshuo</span></div><div class="line"><span class="label">duoshuo_shortname:</span> </div><div class="line"></div><div class="line"><span class="preprocessor"># Baidu share</span></div><div class="line"><span class="label">baidushare:</span> true</div></pre></td></tr></table></figure>
+
+<ul>
+<li><code>links</code> - 友情链接</li>
+<li><code>duoshuo_shortname</code> - 多说评论id</li>
+<li><code>baidushare</code> - 是否开启百度分享</li>
+</ul>
+<h2 id="常见问题"><a name="常见问题">常见问题</a></h2>
+<p><strong>问</strong>：Demo看起来很赞，我要<strong>怎么使用landscape+主题？</strong></p>
+<blockquote>
+<p>按照上方的步骤进行<code>安装</code>、<code>启用</code>、<code>更新</code>。</p>
+</blockquote>
+<p><strong>问</strong>：怎么提建议？</p>
+<blockquote>
+<p>主题还在调整中，欢迎<a href="https://github.com/xiangming/landscape-plus/issues/new" target="_blank" rel="external">open issue</a>来提建议，参与讨论。</p>
+</blockquote>
+<p><strong>问</strong>：怎么添加友情链接？</p>
+<blockquote>
+<p>修改<code>themes/landscape-plus/_config.yml</code>中的<code>links</code>。</p>
+</blockquote>
+<p><strong>问</strong>：我喜欢原主题顶部的大图，如何恢复？</p>
+<blockquote>
+<p><code>themes/landscape-plus/source/css/_partial/header.styl</code>，取消第33行的注释。</p>
+</blockquote>
+<p><strong>问</strong>：我是中国人，但是我喜欢英语？</p>
+<blockquote>
+<p>配置你的hexo源文件的<code>_config.yml</code>，去掉<code>language: zh-CN</code>。</p>
+</blockquote>
+<p><strong>问</strong>：Landscape plus主题的字体配色太闪眼睛了，我怎么换回原主题的样式？</p>
+<blockquote>
+<p>请参考这条<a href="https://github.com/xiangming/landscape-plus/issues/13" target="_blank" rel="external">issue</a>进行配置。</p>
+</blockquote>
+<p><strong>问</strong>：如何开启多说评论模块？</p>
+<blockquote>
+<p>修改<code>themes/landscape-plus\_config.yml</code>，填写你的多说id即可。（主题会自动启用多说评论，忽略hexo默认的disqus。）</p>
+</blockquote>
+<p><strong>问</strong>：如何开启百度分享模块？</p>
+<blockquote>
+<p>修改<code>themes/landscape-plus\_config.yml</code>，将<code>baidushare</code>设置为<code>true</code>即可。（已默认开启）</p>
+</blockquote>
+<p><strong>问</strong>：如何使用RSS分享功能？</p>
+<blockquote>
+<p>请参考这条<a href="https://github.com/xiangming/landscape-plus/issues/31" target="_blank" rel="external">issue</a>进行配置。</p>
+</blockquote>
+<h2 id="更新日志"><a name="更新日志">更新日志</a></h2>
+<h3 id="v1-0-3">v1.0.3</h3>
+<ul>
+<li>增加对 <strong>IE8</strong> 的支持</li>
+<li>集成 <strong>mathjax</strong> ，即latex数学公式的支持。（感谢 @Svtter 的<a href="https://github.com/xiangming/landscape-plus/pull/35" target="_blank" rel="external">pull request</a>）</li>
+</ul>
+<h3 id="v1-0-2">v1.0.2</h3>
+<ul>
+<li>修改: 优化Generate速度，refs #13</li>
+</ul>
+<h3 id="v1-0-1">v1.0.1</h3>
+<ul>
+<li>新增: 百度分享模块</li>
+</ul>
+<h3 id="v1-0-0">v1.0.0</h3>
+<ul>
+<li>修改：根据国情，去掉Google的库，改用cloudflare的cdn</li>
+<li>新增：语言包</li>
+<li>修改：代码高亮配色修改为<code>Monokai</code></li>
+<li>新增：友情链接</li>
+<li>修改：隐藏顶部大图</li>
+<li>修改：主题配色和部分markdown样式</li>
+<li>新增：多说评论模块</li>
+</ul>
+<h2 id="网站列表"><a name="网站列表">网站列表</a></h2>
+<ul>
+<li><strong><a href="http://jasonxiang.com/landscape-plus/" target="_blank" rel="external">hexo-theme-landscape-plus</a></strong> - The demo site of Landscape-plus theme.</li>
+<li><strong><a href="http://bawn.github.io/" target="_blank" rel="external">bawn</a></strong> - iOS开发博客</li>
+<li><strong><a href="http://jiatang.me" target="_blank" rel="external">假唐</a></strong> - 个人博客</li>
+<li><strong><a href="http://www.tangyumeng.com" target="_blank" rel="external">tangyumeng</a></strong> - tangyumeng’s blog</li>
+<li><strong><a href="http://www.novsec.com/" target="_blank" rel="external">novsec</a></strong> - novsec’s blog</li>
+<li><strong><a href="http://xfeng.me/" target="_blank" rel="external">joysboy</a></strong> - 小峰网络遨游记</li>
+<li><strong><a href="http://silenceage.com/" target="_blank" rel="external">沉默紀</a></strong> - Silenceage</li>
+<li><strong><a href="http://artwalk.github.io/" target="_blank" rel="external">游走的艺术</a></strong> - Artwalk’s Blog</li>
+<li><strong><a href="http://codermango.com/" target="_blank" rel="external">Mark’s Blog</a></strong> - Life and Technology</li>
+<li><strong><a href="http://lszb811.com/" target="_blank" rel="external">一盏灯，一部随身听，一本书。。。。。。</a></strong> - This is 洛桑扎巴’s personal blog</li>
+<li><strong><a href="https://dsy.im" target="_blank" rel="external">YumeMichi’s Blog</a></strong> - 随心、随想</li>
+<li><strong><a href="http://litengfei.com" target="_blank" rel="external">小新技术随想</a></strong> - 技术，生活，梦想</li>
+<li><strong><a href="http://nshen.net" target="_blank" rel="external">N神的研究所</a></strong> - 我正在考虑在这里写点啥…</li>
+<li><strong><a href="http://mclspace.com" target="_blank" rel="external">Mcl’s Space</a></strong> -MCL 的空间</li>
+<li><strong><a href="http://lihongn.tk" target="_blank" rel="external">Hello,world</a></strong> - 红红的个人博客</li>
+<li><strong><a href="http://twocucao.github.io/" target="_blank" rel="external">SkyCoder‘s Blog</a></strong> - SkyCoder‘s Blog</li>
+<li><strong><a href="http://laiyilong.github.io/" target="_blank" rel="external">Yilong’s Blog</a></strong> - Keep It simple,small…</li>
+<li><strong><a href="http://yuechang.github.io/" target="_blank" rel="external">漠北空城</a></strong> - 做好自己</li>
+<li><strong><a href="http://cifer.me" target="_blank" rel="external">Just for Free</a></strong> - 自由为王, 一生只为自由的活着</li>
+<li><strong><a href="http://wurang.net/" target="_blank" rel="external">Rang</a></strong> - Rang</li>
+<li><strong><a href="http://beeder.me/" target="_blank" rel="external">Beeder’s Blog</a></strong> - Beeder’s Blog</li>
+<li><strong><a href="http://www.peng8.net/" target="_blank" rel="external">peng8.net</a></strong> - peng8.net 技术博客.</li>
+</ul>
+<p>如果你的网站正在使用<strong>landscape-plus</strong>主题，欢迎将网址添加到<a href="https://github.com/xiangming/landscape-plus/wiki" target="_blank" rel="external">wiki的网站列表</a>，我会不定期进行整理。</p>
+]]></content>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.suliaobaozhuang.net/about/index.html</loc>
+    <lastmod>2015-01-02T12:06:15.000Z</lastmod>
+    <data>
+        <display>
+        <title>about</title>
+        <pubTime>2015-01-02T11:52:30.000Z</pubTime>
+        
+         <content><![CDATA[<h1 id="联系我们">联系我们</h1>
+<p><strong>广州吸塑包装厂</strong><br><strong>广州塑料包装厂</strong><br>Guangzhou Blister &amp; Plastic Packaging Co, LTD </p>
+<p>地址：      广州市三元里大道1-1号(邮编:100015)<br>服务电话：      <code>13662515333</code> （业务垂询请拨打总机）<br>服务手机：      <code>13662515333</code> （7×24小时）<br>监督电话：      <code>13662515333</code>（7×24小时）</p>
+<p>商务邮箱： <a href="mailto:market@suliaobaozhuang.net" target="_blank" rel="external">market@suliaobaozhuang.net</a><br>网站管理： <a href="mailto:webmaster@suliaobaozhuang.net" target="_blank" rel="external">webmaster@suliaobaozhuang.net</a></p>
+]]></content>
+         
+         
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.suliaobaozhuang.net/2014/12/22-xinjianwenzhang.html</loc>
+    <lastmod>2015-01-02T12:01:46.000Z</lastmod>
+    <data>
+        <display>
+        <title>测试MD的语法</title>
+        <pubTime>2014-12-22T15:16:23.000Z</pubTime>
+        
+        <tag>标签1 </tag>
+         
+        <tag>标签2 </tag>
+         
+         <content><![CDATA[<h1 id="大字一">大字一</h1>
+<p>内容测试。</p>
+<h2 id="大字二">大字二</h2>
+<ul>
+<li>写几个<strong>粗体字</strong>测试。=&gt; <a href="https://github.com/chinamobiler" target="_blank" rel="external">点击链接测试</a></li>
+</ul>
+<h2 id="大字二-1">大字二</h2>
+<ul>
+<li><a href="#演示想">演示想</a></li>
+</ul>
+<h2 id="演示想"><a name="演示想">演示想</a></h2>
+<p>你可以点击<a href="http://xxx/" target="_blank" rel="external">这里</a>，查看演示。</p>
+<h2 id="安装"><a name="安装">安装</a></h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">+修改主题的设置文件`_config.yml`，把`theme`的值设置为`landscape-plus`</div></pre></td></tr></table></figure>
+
+<p><strong>问</strong>：Demo看起来很赞，我要<strong>怎么使用landscape+主题？</strong></p>
+<blockquote>
+<p>按照上方的<a href="http://ggg.com" target="_blank" rel="external">步骤</a>进行<code>安装</code>、<code>启用</code>、<code>更新</code>。</p>
+</blockquote>
+<h2 id="网站列表"><a name="网站列表">网站列表</a></h2>
+<ul>
+<li><strong>[hexo-theme-landscape-plus]</strong> - The demo site of Landscape-plus theme.</li>
+</ul>
+]]></content>
+         
+         
+           
+             
+              <breadCrumb title="类别1" url="http://www.suliaobaozhuang.net/c/%E7%B1%BB%E5%88%AB1/"/>
+          
+             
+              <breadCrumb title="类别2" url="http://www.suliaobaozhuang.net/c/%E7%B1%BB%E5%88%AB2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.suliaobaozhuang.net/2015/01/01-news72000_225.html</loc>
+    <lastmod>2015-01-01T15:22:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>上海石化PP投产将冲击市场</title>
+        <pubTime>2015-01-01T15:21:02.000Z</pubTime>
+        
+        <tag>吸塑包装 </tag>
+         
+        <tag>吸塑制品 </tag>
+         
+        <tag>吸塑托盘 </tag>
+         
+        <tag>塑料包装 </tag>
+         
+        <tag>塑料包装盒 </tag>
+         
+        <tag>塑料包装厂 </tag>
+         
+         <content><![CDATA[<p>春节后，国内聚丙烯市场价格走势较为微妙，由于进口货价格仍较高，有利于国内市场的稳定，不排除出现一轮新的上涨行情的可能，不过将较1月份炒做气氛差，大量1-2月份订单进口产品也将可能会改善目前通用料供应紧张的局面，并且不少亚洲聚丙烯厂商认为目前为止，聚丙烯继续上扬的空间已不大，未来经济前景到底如何现在还不明朗，因此，估计3月份市场持续走高的可能性不大，同时，上海石化新建20万吨聚丙烯生产线已与春节后正式投产运行，对市场的负面影响力将比较大。    2002年3月1日    </p>
+]]></content>
+         
+         
+           
+             
+              <breadCrumb title="news" url="http://www.suliaobaozhuang.net/c/news/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.suliaobaozhuang.net/2015/01/01-news72000_224.html</loc>
     <lastmod>2015-01-01T15:22:18.000Z</lastmod>
     <data>
@@ -36,11 +291,11 @@
 
     
   <url>
-    <loc>http://www.suliaobaozhuang.net/2015/01/01-news72000_223.html</loc>
+    <loc>http://www.suliaobaozhuang.net/2015/01/01-news72000_226.html</loc>
     <lastmod>2015-01-01T15:22:18.000Z</lastmod>
     <data>
         <display>
-        <title>应邀走进中央电视台国际频道蒋巨峰向世界剖析温州“最深处”</title>
+        <title>3月1日台湾股市塑胶股大涨</title>
         <pubTime>2015-01-01T15:21:02.000Z</pubTime>
         
         <tag>吸塑包装 </tag>
@@ -55,7 +310,7 @@
          
         <tag>塑料包装厂 </tag>
          
-         <content><![CDATA[<p>　　温州晚报讯 “在最高点审视，在最深处剖析”，这是中央电视台重点栏目“中国报道”的特色。昨晚，省委常委、市委书记蒋巨峰接受该栏目记者访谈的新闻内容在央视国际频道中播出，蒋巨峰向全世界介绍了日新月异的新温州。 　　昨晚的节目是“中国报道”栏目“中国城市”系列报道中的一篇。在报道涉及的这些城市中既有千年古都，又有新兴的迅速发展起来的城市，温州就是其中的一个。蒋巨峰面对节目主持人的采访，就我市的城市建设和经济建设等相关问题，进行了剖析。他说，温州的成功，首先得益于改革开放的政策，其次是“穷则思变”的观念，第三就是温州人独特的文化底蕴，表现在今天就是敢为人先、特别能创业的温州精神，最终成功地在温州实现了邓小平理论的伟大实践。就温州经济的动力，蒋巨峰表示，温州的企业充满着强劲的内在动力，有一种内在的拓展冲动，依托于国家的政策，使得温州的经济一直保持着快速、稳定、健康的发展态势。针对企业家所说的“八十年代是杂牌对杂牌，九十年代是名牌对杂牌，如今是名牌对名牌的竞争”的闯品牌之路，蒋巨峰表示，温州从不讲品牌到拥有众多品牌，经历了一个发展过程。塑造品牌一要形成生产规模，产生几个好品牌，其二就是打造区域品牌，通过形成某种产品的规模，进而形成区域品牌，“中国鞋都”、“金属外壳打火机生产基地”及“剃须刀生产基地”等就是其中的例子。 　　最后，蒋巨峰还向全球观众描绘了温州诱人的现代化前景。 　　首席记者 周丽峰 2002年2月28日    </p>
+         <content><![CDATA[<p>台湾股市周五收低，受美国科技类股下跌拖累，但受塑胶和化学类股涨势支撑，因投资者将注意力转向该类景气循环类股。 　　台股加权股价指数收低15.33点或0.27％至5,680.78，为过去八个交易日里第七次收跌。交投温和，成交值为1,133.5亿台币，高于周三的1,100亿台币。 　　周四台湾金融市场因公众假期而休市。 　　电子类指数收低1.06％，受周四美国Nasdaq综合指数下跌1.16％影响。 　　塑胶类股大涨，该产业巨擘台塑升至涨停，或3.00台币，报47.10台币。 　　台证投顾研究部分析师段树仁指出，“这应该看作是防御性买盘。以前市场对电子类股过于关注了。” 　　段树仁指出，“一个月来塑胶产品价格不断上涨，当我们第一次向客户推介此类股时，他们会问：你到底在说什么？而现在投资人对塑胶类股则渐趋狂热。”2002年3月4日    </p>
 ]]></content>
          
          
@@ -201,11 +456,11 @@
 
     
   <url>
-    <loc>http://www.suliaobaozhuang.net/2015/01/01-news72000_225.html</loc>
+    <loc>http://www.suliaobaozhuang.net/2015/01/01-news72000_223.html</loc>
     <lastmod>2015-01-01T15:22:18.000Z</lastmod>
     <data>
         <display>
-        <title>上海石化PP投产将冲击市场</title>
+        <title>应邀走进中央电视台国际频道蒋巨峰向世界剖析温州“最深处”</title>
         <pubTime>2015-01-01T15:21:02.000Z</pubTime>
         
         <tag>吸塑包装 </tag>
@@ -220,7 +475,7 @@
          
         <tag>塑料包装厂 </tag>
          
-         <content><![CDATA[<p>春节后，国内聚丙烯市场价格走势较为微妙，由于进口货价格仍较高，有利于国内市场的稳定，不排除出现一轮新的上涨行情的可能，不过将较1月份炒做气氛差，大量1-2月份订单进口产品也将可能会改善目前通用料供应紧张的局面，并且不少亚洲聚丙烯厂商认为目前为止，聚丙烯继续上扬的空间已不大，未来经济前景到底如何现在还不明朗，因此，估计3月份市场持续走高的可能性不大，同时，上海石化新建20万吨聚丙烯生产线已与春节后正式投产运行，对市场的负面影响力将比较大。    2002年3月1日    </p>
+         <content><![CDATA[<p>　　温州晚报讯 “在最高点审视，在最深处剖析”，这是中央电视台重点栏目“中国报道”的特色。昨晚，省委常委、市委书记蒋巨峰接受该栏目记者访谈的新闻内容在央视国际频道中播出，蒋巨峰向全世界介绍了日新月异的新温州。 　　昨晚的节目是“中国报道”栏目“中国城市”系列报道中的一篇。在报道涉及的这些城市中既有千年古都，又有新兴的迅速发展起来的城市，温州就是其中的一个。蒋巨峰面对节目主持人的采访，就我市的城市建设和经济建设等相关问题，进行了剖析。他说，温州的成功，首先得益于改革开放的政策，其次是“穷则思变”的观念，第三就是温州人独特的文化底蕴，表现在今天就是敢为人先、特别能创业的温州精神，最终成功地在温州实现了邓小平理论的伟大实践。就温州经济的动力，蒋巨峰表示，温州的企业充满着强劲的内在动力，有一种内在的拓展冲动，依托于国家的政策，使得温州的经济一直保持着快速、稳定、健康的发展态势。针对企业家所说的“八十年代是杂牌对杂牌，九十年代是名牌对杂牌，如今是名牌对名牌的竞争”的闯品牌之路，蒋巨峰表示，温州从不讲品牌到拥有众多品牌，经历了一个发展过程。塑造品牌一要形成生产规模，产生几个好品牌，其二就是打造区域品牌，通过形成某种产品的规模，进而形成区域品牌，“中国鞋都”、“金属外壳打火机生产基地”及“剃须刀生产基地”等就是其中的例子。 　　最后，蒋巨峰还向全球观众描绘了温州诱人的现代化前景。 　　首席记者 周丽峰 2002年2月28日    </p>
 ]]></content>
          
          
@@ -234,44 +489,11 @@
 
     
   <url>
-    <loc>http://www.suliaobaozhuang.net/2015/01/01-news72000_226.html</loc>
-    <lastmod>2015-01-01T15:22:18.000Z</lastmod>
-    <data>
-        <display>
-        <title>3月1日台湾股市塑胶股大涨</title>
-        <pubTime>2015-01-01T15:21:02.000Z</pubTime>
-        
-        <tag>吸塑包装 </tag>
-         
-        <tag>吸塑制品 </tag>
-         
-        <tag>吸塑托盘 </tag>
-         
-        <tag>塑料包装 </tag>
-         
-        <tag>塑料包装盒 </tag>
-         
-        <tag>塑料包装厂 </tag>
-         
-         <content><![CDATA[<p>台湾股市周五收低，受美国科技类股下跌拖累，但受塑胶和化学类股涨势支撑，因投资者将注意力转向该类景气循环类股。 　　台股加权股价指数收低15.33点或0.27％至5,680.78，为过去八个交易日里第七次收跌。交投温和，成交值为1,133.5亿台币，高于周三的1,100亿台币。 　　周四台湾金融市场因公众假期而休市。 　　电子类指数收低1.06％，受周四美国Nasdaq综合指数下跌1.16％影响。 　　塑胶类股大涨，该产业巨擘台塑升至涨停，或3.00台币，报47.10台币。 　　台证投顾研究部分析师段树仁指出，“这应该看作是防御性买盘。以前市场对电子类股过于关注了。” 　　段树仁指出，“一个月来塑胶产品价格不断上涨，当我们第一次向客户推介此类股时，他们会问：你到底在说什么？而现在投资人对塑胶类股则渐趋狂热。”2002年3月4日    </p>
-]]></content>
-         
-         
-           
-             
-              <breadCrumb title="news" url="http://www.suliaobaozhuang.net/c/news/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.suliaobaozhuang.net/2015/01/01-news72000_213.html</loc>
+    <loc>http://www.suliaobaozhuang.net/2015/01/01-news72000_207.html</loc>
     <lastmod>2015-01-01T15:22:17.000Z</lastmod>
     <data>
         <display>
-        <title>欧洲塑料管材需求看涨</title>
+        <title>世界丙烯价格将波浪式上升</title>
         <pubTime>2015-01-01T14:38:44.000Z</pubTime>
         
         <tag>吸塑包装 </tag>
@@ -286,7 +508,40 @@
          
         <tag>塑料包装厂 </tag>
          
-         <content><![CDATA[<p>　　据菲利普——汤森联合公司研究报告，预计2005年欧洲管材市场树脂消耗总量将达到410万吨，年平均增长3.1％。　　聚丙烯（PP）和交联聚乙烯（PEX）是欧洲管材市场中消费增长最快的树脂。由于新等级产品即将替代建筑业和排污管道中使用的传统非塑料材料和PVC，预计PP需求年增长率将超过9％，而PEX的需求年增长率将达到5.5％。尽管如此，PVC和HDPE仍是欧洲塑料管材生产使用的主要树脂，因为PVC提供了良好的价格性能比，HDPE是气体和排水压力管生产中的首选树脂。　　欧洲塑料管材的主要应用于排污（30％）、灌溉（16％）和建筑（15％）。增长比较快的应用领域为气体分输、电缆导管和建筑管线。西欧主要塑料管材消费国是德国、意大利、西班牙和法国，而需求增长最快的国家是爱尔兰、奥地利、瑞士和挪威。在中东欧，主要消费国为土耳其、波兰和俄罗斯，管材市场增长最快的国家包括捷克共和国，匈牙利和土耳其。  2002年2月25日    </p>
+         <content><![CDATA[<p>　　美国化学市场联合公司最近完成了对全球丙烯市场的分析报告，研究了世界范围内丙烯的供求状况。该公司的报告指出，从2005年到2015年间，世界丙烯供应可能会出现紧张局面。　　目前全世界每年生产约5020万吨的PG－CG（聚合物级和化学级）丙烯，其中大部分为蒸汽裂解装置生产乙烯的副产品。丙烯中约有70％来自蒸汽裂解装置，28％来自炼厂的催化裂化装置，另有2％是由丙烷脱氢或歧化而来。在今后15年，全世界由蒸汽裂解装置生产并供应石化工业的PG－CG丙烯的年增长速度预期平均为4.2％。　　另外，世界每年由炼厂生产的丙烯约为3120万吨，其中大部分来自催化裂化装置（FCC），作为汽油和馏分油生产的副产品。这些丙烯一半以上已经用于石化工业生产，其余部分用作炼厂的其他工艺原料，如烷基化，汽油加工，或LPG／丙烷调合。预计今后15年全世界来自FCC装置供应石化工业的丙烯年增长率平均为5％。　　美国化学市场联合公司的这份研究报告还指出，目前世界三大丙烯产地为西欧、北美和东北亚，其主要原因是这些地区拥有较多的人口、发达的经济以及相对较大的蒸汽裂解装置和炼厂的生产基础。另外，尽管东南亚和中东地区的丙烯产量不高，但这些地区的产量正在快速增长。　　在世界大部分地区，石化生产对丙烯的需求增长速度比乙烯快。而新的蒸汽裂解装置的建设并不能满足日益增长的丙烯需求，这样就需要从其他来源获得丙烯，尤其是在2005～2015年期间，这一问题将更加突出。今后的重点将集中在从炼厂FCC装置回收丙烯方面，包括在催化裂化中加入可使丙烯产率加倍的ZSM－5催化剂助剂和采用更新的技术，如DCC（深度催化裂解）。歧化或其他可选择的烯烃裂解技术有可能使丙烯产率提高4倍。而且，其他特殊的丙烯生产技术可能更具经济可行性，包括丙烷脱氢和甲醇制烯烃。　　美国化学市场联合公司预计，由于能源价格波动和供需平衡的变化，世界丙烯价格继续呈现循环性上下波动的特点。预计2002年供需平衡相对宽松，导致价格呈下降趋势，而在2004～2006年间相对吃紧，并导致价格呈向上趋势。在2006年之后的10年间，世界丙烯市场价格将呈现波浪形上升的趋势。 2002年2月20日    </p>
+]]></content>
+         
+         
+           
+             
+              <breadCrumb title="news" url="http://www.suliaobaozhuang.net/c/news/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.suliaobaozhuang.net/2015/01/01-news72000_218.html</loc>
+    <lastmod>2015-01-01T15:22:17.000Z</lastmod>
+    <data>
+        <display>
+        <title>亚洲最大铝塑管生产线将在沈阳投产</title>
+        <pubTime>2015-01-01T14:38:45.000Z</pubTime>
+        
+        <tag>吸塑包装 </tag>
+         
+        <tag>吸塑制品 </tag>
+         
+        <tag>吸塑托盘 </tag>
+         
+        <tag>塑料包装 </tag>
+         
+        <tag>塑料包装盒 </tag>
+         
+        <tag>塑料包装厂 </tag>
+         
+         <content><![CDATA[<p>近日，辽宁沈阳金德铝塑复合管有限公司宣布，该公司自今年下半年开始生产铝塑复合管。该公司的投产，标志着中国将拥有亚洲生产规模最大、技术最先进的铝塑复合管生产基地，其生产的铝塑复合管的价格将降到国外同类产品的四分之一 。     沈阳金德铝塑复合管有限公司是中德合资企业。外方是德国以至欧洲铝塑复合管产品及相关业务的最大供应商德国尤尼克公司，金德公司一期工程为15条生产线，设计年生产能力为8000万米，二、三期工程分别为15条与20条，共计生产能力为2.7亿米，整个工程计划到今年底竣工。    据悉,金德公司作为国内最大的铝塑复合管生产企业，同时还生产世界先进的整体压力连接管件。  2002年2月27日    </p>
 ]]></content>
          
          
@@ -399,11 +654,11 @@
 
     
   <url>
-    <loc>http://www.suliaobaozhuang.net/2015/01/01-news72000_206.html</loc>
+    <loc>http://www.suliaobaozhuang.net/2015/01/01-news72000_213.html</loc>
     <lastmod>2015-01-01T15:22:17.000Z</lastmod>
     <data>
         <display>
-        <title>我国将重点发展乙烯、合成树脂及合成橡胶等化工产品</title>
+        <title>欧洲塑料管材需求看涨</title>
         <pubTime>2015-01-01T14:38:44.000Z</pubTime>
         
         <tag>吸塑包装 </tag>
@@ -418,7 +673,7 @@
          
         <tag>塑料包装厂 </tag>
          
-         <content><![CDATA[<p>　　国家经贸委有关负责人日前在中国化学工业高峰论坛上表示，我国将重点发展乙烯、合成树脂、合成橡胶等主要化工品的生产，大型乙烯项目建设是重中之重。　　我国将力争在“十五”期末建成中海－壳牌、扬子－巴斯夫、上海BP等乙烯工程。占五大合成树脂消费量80％的聚乙烯、聚丙烯和聚氯乙烯是今后的发展重点，合成橡胶则重在提高产能比、增加品种，改善质量并降低成本。　　据国家经贸委初步预测，到2005年，我国主要化工产品的需求为：乙烯1500万吨、五大合成树脂2500万～2700万吨、合成纤维原料1100万～1200万吨、合成橡胶110万吨、合成氨3600万吨和化肥4600万吨。但是我国化工企业布局分散，例如，全国18套乙烯装置散布在15个城市，年均产量不足25万吨，最大产量48万吨，而子午线轮胎企业年均生产仅100万条。而且在国产化工产品中，高消耗、粗加工、低附加值产品比重高，科研开发能力也与国际先进水平存在很大差距。 2002年2月20日    </p>
+         <content><![CDATA[<p>　　据菲利普——汤森联合公司研究报告，预计2005年欧洲管材市场树脂消耗总量将达到410万吨，年平均增长3.1％。　　聚丙烯（PP）和交联聚乙烯（PEX）是欧洲管材市场中消费增长最快的树脂。由于新等级产品即将替代建筑业和排污管道中使用的传统非塑料材料和PVC，预计PP需求年增长率将超过9％，而PEX的需求年增长率将达到5.5％。尽管如此，PVC和HDPE仍是欧洲塑料管材生产使用的主要树脂，因为PVC提供了良好的价格性能比，HDPE是气体和排水压力管生产中的首选树脂。　　欧洲塑料管材的主要应用于排污（30％）、灌溉（16％）和建筑（15％）。增长比较快的应用领域为气体分输、电缆导管和建筑管线。西欧主要塑料管材消费国是德国、意大利、西班牙和法国，而需求增长最快的国家是爱尔兰、奥地利、瑞士和挪威。在中东欧，主要消费国为土耳其、波兰和俄罗斯，管材市场增长最快的国家包括捷克共和国，匈牙利和土耳其。  2002年2月25日    </p>
 ]]></content>
          
          
@@ -597,11 +852,11 @@
 
     
   <url>
-    <loc>http://www.suliaobaozhuang.net/2015/01/01-news72000_207.html</loc>
+    <loc>http://www.suliaobaozhuang.net/2015/01/01-news72000_202.html</loc>
     <lastmod>2015-01-01T15:22:17.000Z</lastmod>
     <data>
         <display>
-        <title>世界丙烯价格将波浪式上升</title>
+        <title>新型农用树脂在长春问世</title>
         <pubTime>2015-01-01T14:38:44.000Z</pubTime>
         
         <tag>吸塑包装 </tag>
@@ -616,7 +871,7 @@
          
         <tag>塑料包装厂 </tag>
          
-         <content><![CDATA[<p>　　美国化学市场联合公司最近完成了对全球丙烯市场的分析报告，研究了世界范围内丙烯的供求状况。该公司的报告指出，从2005年到2015年间，世界丙烯供应可能会出现紧张局面。　　目前全世界每年生产约5020万吨的PG－CG（聚合物级和化学级）丙烯，其中大部分为蒸汽裂解装置生产乙烯的副产品。丙烯中约有70％来自蒸汽裂解装置，28％来自炼厂的催化裂化装置，另有2％是由丙烷脱氢或歧化而来。在今后15年，全世界由蒸汽裂解装置生产并供应石化工业的PG－CG丙烯的年增长速度预期平均为4.2％。　　另外，世界每年由炼厂生产的丙烯约为3120万吨，其中大部分来自催化裂化装置（FCC），作为汽油和馏分油生产的副产品。这些丙烯一半以上已经用于石化工业生产，其余部分用作炼厂的其他工艺原料，如烷基化，汽油加工，或LPG／丙烷调合。预计今后15年全世界来自FCC装置供应石化工业的丙烯年增长率平均为5％。　　美国化学市场联合公司的这份研究报告还指出，目前世界三大丙烯产地为西欧、北美和东北亚，其主要原因是这些地区拥有较多的人口、发达的经济以及相对较大的蒸汽裂解装置和炼厂的生产基础。另外，尽管东南亚和中东地区的丙烯产量不高，但这些地区的产量正在快速增长。　　在世界大部分地区，石化生产对丙烯的需求增长速度比乙烯快。而新的蒸汽裂解装置的建设并不能满足日益增长的丙烯需求，这样就需要从其他来源获得丙烯，尤其是在2005～2015年期间，这一问题将更加突出。今后的重点将集中在从炼厂FCC装置回收丙烯方面，包括在催化裂化中加入可使丙烯产率加倍的ZSM－5催化剂助剂和采用更新的技术，如DCC（深度催化裂解）。歧化或其他可选择的烯烃裂解技术有可能使丙烯产率提高4倍。而且，其他特殊的丙烯生产技术可能更具经济可行性，包括丙烷脱氢和甲醇制烯烃。　　美国化学市场联合公司预计，由于能源价格波动和供需平衡的变化，世界丙烯价格继续呈现循环性上下波动的特点。预计2002年供需平衡相对宽松，导致价格呈下降趋势，而在2004～2006年间相对吃紧，并导致价格呈向上趋势。在2006年之后的10年间，世界丙烯市场价格将呈现波浪形上升的趋势。 2002年2月20日    </p>
+         <content><![CDATA[<p>一种具有抗旱功能、促进农作物增产增收的最佳农用高吸水性树脂系列产品在长春研制成功。2002年1月12日，这一由中科院长春应用化学研究所承担的中科院重点科研项目正式通过验收，有关方面专家认为，该项工作中研制成功的含有高吸水性树脂成份的抗旱多功能种衣剂、长效化肥在技术上有重大创新，其性能优于世界领先的比利时同类产品的水平。它的诞生，为我国进一步推行高效节水节肥农业综合技术，促进现代农业的快速发展提供了一条良好的途径。高吸水性树脂问世于20世纪70年代中期，由于其具有节水、节能、提高农作物产量的重要作用，近年来，在一些发达国家，以农用高吸水性树脂为主要技术内容的“绿色地球计划”、“治理沙漠计划”相继出台，实际应用效果十分显著。根据俄国20世纪90年代在伏尔加格勒利用聚丙烯酰胺高吸水性树脂大面积农田试验结果显示，每公顷土地施加100公斤树脂，可节水50%，提高农作物产量20%-70%。正是由于这种“树脂”的特殊功能，越来越使其成为人们研究与关注的前沿科学问题之一。    2002年2月10日    </p>
 ]]></content>
          
          
@@ -630,12 +885,12 @@
 
     
   <url>
-    <loc>http://www.suliaobaozhuang.net/2015/01/01-news72000_218.html</loc>
+    <loc>http://www.suliaobaozhuang.net/2015/01/01-news72000_206.html</loc>
     <lastmod>2015-01-01T15:22:17.000Z</lastmod>
     <data>
         <display>
-        <title>亚洲最大铝塑管生产线将在沈阳投产</title>
-        <pubTime>2015-01-01T14:38:45.000Z</pubTime>
+        <title>我国将重点发展乙烯、合成树脂及合成橡胶等化工产品</title>
+        <pubTime>2015-01-01T14:38:44.000Z</pubTime>
         
         <tag>吸塑包装 </tag>
          
@@ -649,7 +904,7 @@
          
         <tag>塑料包装厂 </tag>
          
-         <content><![CDATA[<p>近日，辽宁沈阳金德铝塑复合管有限公司宣布，该公司自今年下半年开始生产铝塑复合管。该公司的投产，标志着中国将拥有亚洲生产规模最大、技术最先进的铝塑复合管生产基地，其生产的铝塑复合管的价格将降到国外同类产品的四分之一 。     沈阳金德铝塑复合管有限公司是中德合资企业。外方是德国以至欧洲铝塑复合管产品及相关业务的最大供应商德国尤尼克公司，金德公司一期工程为15条生产线，设计年生产能力为8000万米，二、三期工程分别为15条与20条，共计生产能力为2.7亿米，整个工程计划到今年底竣工。    据悉,金德公司作为国内最大的铝塑复合管生产企业，同时还生产世界先进的整体压力连接管件。  2002年2月27日    </p>
+         <content><![CDATA[<p>　　国家经贸委有关负责人日前在中国化学工业高峰论坛上表示，我国将重点发展乙烯、合成树脂、合成橡胶等主要化工品的生产，大型乙烯项目建设是重中之重。　　我国将力争在“十五”期末建成中海－壳牌、扬子－巴斯夫、上海BP等乙烯工程。占五大合成树脂消费量80％的聚乙烯、聚丙烯和聚氯乙烯是今后的发展重点，合成橡胶则重在提高产能比、增加品种，改善质量并降低成本。　　据国家经贸委初步预测，到2005年，我国主要化工产品的需求为：乙烯1500万吨、五大合成树脂2500万～2700万吨、合成纤维原料1100万～1200万吨、合成橡胶110万吨、合成氨3600万吨和化肥4600万吨。但是我国化工企业布局分散，例如，全国18套乙烯装置散布在15个城市，年均产量不足25万吨，最大产量48万吨，而子午线轮胎企业年均生产仅100万条。而且在国产化工产品中，高消耗、粗加工、低附加值产品比重高，科研开发能力也与国际先进水平存在很大差距。 2002年2月20日    </p>
 ]]></content>
          
          
@@ -762,39 +1017,6 @@
 
     
   <url>
-    <loc>http://www.suliaobaozhuang.net/2015/01/01-news72000_202.html</loc>
-    <lastmod>2015-01-01T15:22:17.000Z</lastmod>
-    <data>
-        <display>
-        <title>新型农用树脂在长春问世</title>
-        <pubTime>2015-01-01T14:38:44.000Z</pubTime>
-        
-        <tag>吸塑包装 </tag>
-         
-        <tag>吸塑制品 </tag>
-         
-        <tag>吸塑托盘 </tag>
-         
-        <tag>塑料包装 </tag>
-         
-        <tag>塑料包装盒 </tag>
-         
-        <tag>塑料包装厂 </tag>
-         
-         <content><![CDATA[<p>一种具有抗旱功能、促进农作物增产增收的最佳农用高吸水性树脂系列产品在长春研制成功。2002年1月12日，这一由中科院长春应用化学研究所承担的中科院重点科研项目正式通过验收，有关方面专家认为，该项工作中研制成功的含有高吸水性树脂成份的抗旱多功能种衣剂、长效化肥在技术上有重大创新，其性能优于世界领先的比利时同类产品的水平。它的诞生，为我国进一步推行高效节水节肥农业综合技术，促进现代农业的快速发展提供了一条良好的途径。高吸水性树脂问世于20世纪70年代中期，由于其具有节水、节能、提高农作物产量的重要作用，近年来，在一些发达国家，以农用高吸水性树脂为主要技术内容的“绿色地球计划”、“治理沙漠计划”相继出台，实际应用效果十分显著。根据俄国20世纪90年代在伏尔加格勒利用聚丙烯酰胺高吸水性树脂大面积农田试验结果显示，每公顷土地施加100公斤树脂，可节水50%，提高农作物产量20%-70%。正是由于这种“树脂”的特殊功能，越来越使其成为人们研究与关注的前沿科学问题之一。    2002年2月10日    </p>
-]]></content>
-         
-         
-           
-             
-              <breadCrumb title="news" url="http://www.suliaobaozhuang.net/c/news/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.suliaobaozhuang.net/2015/01/01-news72000_201.html</loc>
     <lastmod>2015-01-01T15:22:16.000Z</lastmod>
     <data>
@@ -847,40 +1069,7 @@
               <breadCrumb title="类别1" url="http://www.suliaobaozhuang.net/c/%E7%B1%BB%E5%88%AB1/"/>
           
              
-              <breadCrumb title="类别2" url="http://www.suliaobaozhuang.net/c/%E7%B1%BB%E5%88%AB1/%E7%B1%BB%E5%88%AB2/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.suliaobaozhuang.net/2014/12/31-news72000_193.html</loc>
-    <lastmod>2015-01-01T14:38:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>工程塑料工业将进入快速发展时期</title>
-        <pubTime>2014-12-31T14:11:42.000Z</pubTime>
-        
-        <tag>吸塑包装 </tag>
-         
-        <tag>吸塑制品 </tag>
-         
-        <tag>吸塑托盘 </tag>
-         
-        <tag>塑料包装 </tag>
-         
-        <tag>塑料包装盒 </tag>
-         
-        <tag>塑料包装厂 </tag>
-         
-         <content><![CDATA[<p>据中国工程塑料工业协会秘书长、高级工程师郑恺介绍，今后工程塑料制品将在家电、电子、汽车、通信、国防等领域得到快速发展。　　在合成树脂方面，由于采用新单体合成塑料的新品种难度大、周期长、投资大、收效慢，２０世纪８０年代后已呈减少趋势，短期内不会有太多新的品种面市，而一些用茂金属催化剂改变分子排列，从而改善材料性能的产品，这几年发展很快，如ＰＰＲ、ＳＰＳ等。另外，由现有聚合物和单体经过合金化、共混改性等技术制成新的品种材料，以满足市场的不同需求，使通用塑料工程化。工程塑料高性能化和低成本化已成为今后工程塑料品种发展的主要趋势，如改性ＰＡ、改性ＡＢＳ、改性ＰＯＭ、ＰＣ／ＡＢＳ合金、ＰＡ／ＰＰＯ合金、ＰＡ／ＰＰ合金等。    电子、信息和汽车行业的发展为工程塑料的发展带来了良好的机遇，同时也受到严峻的挑战。预计２００５年我国汽车产量将达到３２０万辆，其中轿车将占４０％左右，需要各种塑料配件将达４０万吨。汽车要解决油耗、噪音、尾气等问题，零部件和车身的部件要采用塑料复合材料，既要性能好，又要成本低。材料行业还要满足电子电气及信息产品小、轻，高性能化的要求。    环境问题是可持续发展战略中十分重要的一环。今后开发塑料产品时，不仅要考虑它的经济性，而且还要考虑环境因素，必须以节能、省料、有利环保为前提。企业的环境战略直接影响企业的竞争力，废旧材料的回用将成为塑料工业的战略课题，特别是耐用消费品的塑料件回收利用问题，将得到更大的关注。国外塑料包装回收率在６０％以上，我国还很低，今后塑料回收利用将成为一大发展热点。    在聚合物改性中，纳米材料和液晶材料复合新技术将给塑料业带来革命性的影响。由于这是一个新学科领域，涉及到凝聚态物理、量子物理、化学、材料、生物等多领域学科，势必对材料学产生深远的影响。今后高分子聚合纳米材料改性的研究是不可缺少的一部分，也会给工程塑料发展带来意想不到的结果。据了解，１９９９年全世界纳米复合材料用量仅为１０００吨，全部是ＰＡ材料，今后几年将增长很快，预计到２００４年用量将达到１２．５万吨，品种也会有所增加。另外特种工程塑料随着市场需求的增加，今后几年发展速度也会较快。 2002年2月4日    </p>
-]]></content>
-         
-         
-           
-             
-              <breadCrumb title="news" url="http://www.suliaobaozhuang.net/c/news/"/>
+              <breadCrumb title="类别2" url="http://www.suliaobaozhuang.net/c/%E7%B1%BB%E5%88%AB2/"/>
           
         </display>
     </data>
@@ -908,6 +1097,39 @@
         <tag>塑料包装厂 </tag>
          
          <content><![CDATA[<p>在目前远东聚乙烯（PE）市场一片涨潮声中，LLDPE价格在市场中迅速窜起，进口到中国的LLDPE到岸价每吨已超过500美元，为这波涨幅最大的PE原料。去年由于亚洲地区LLDPE新增产能大幅增加，造成LLDPE市场价格最低跌至每吨410～420美元，这些新增的产能，主要是新加坡埃克森美孚的LLDPE（含HDPE）48万吨、台塑的HDPE与LDPE各20万吨，以及沙特阿拉伯的Yanpet新增LLDPE达50万吨、Kemya新增LDPE、LLDPE各20万吨等，使得LLDPE价格一蹶不振。    生产厂商表示，中国内地在去年底正式加入WTO后，自今年初即调降5大通用塑料原料进口关税，使大陆沉寂已久的PE买盘，自本月中旬开始爆发。其中HDPE交易最热，原本在每吨460美元左右的HDPE价格已涨至每吨520美元。由于LDPE、HDPE价格都已回升至500美元/吨以上，过去处于低价的LLDPE原料立即成为买盘热点，在不到一周的时间内，也暴涨至500美元/吨。    业内人士表示，LLDPE价格急速上扬，将对LDPE、HDPE原料价格起到推升作用，如韩国湖南石化公司已有意将HDPE再拉高至550美元/吨。    这波PE涨价热潮来势之快，使许多贸易商感到措手不及，一些较远地区的订单如欧洲、拉丁美洲，船期都无法敲定。现在已有部分贸易商认为，塑料产业已开始脱离谷底，未来可望有2～3年的好光景。    据中国台湾地区最大的PE供应商——台塑公司的分析资料指出，去年全球乙烯新增产能为7.9%，为近年来乙烯供应成长率最高的一年，也使去年成为石化业景气最差的一年，今年全球乙烯新增产能将降至4.2%；另外，去年国际油价平均每桶约26美元，而今年国际油价平均每桶将有可能降至20美元以下，使石化业的原料成本大幅度下降。因此，今年石化业景气度预计将比去年大有改观。  2002年2月7日    </p>
+]]></content>
+         
+         
+           
+             
+              <breadCrumb title="news" url="http://www.suliaobaozhuang.net/c/news/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.suliaobaozhuang.net/2014/12/31-news72000_199.html</loc>
+    <lastmod>2015-01-01T14:38:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>我国首次研制成功高熔体强度聚丙烯</title>
+        <pubTime>2014-12-31T14:11:42.000Z</pubTime>
+        
+        <tag>吸塑包装 </tag>
+         
+        <tag>吸塑制品 </tag>
+         
+        <tag>吸塑托盘 </tag>
+         
+        <tag>塑料包装 </tag>
+         
+        <tag>塑料包装盒 </tag>
+         
+        <tag>塑料包装厂 </tag>
+         
+         <content><![CDATA[<p>北京化工研究院日前在国内首次通过辐照支化方法研制出支化型高熔体强度聚丙烯。这种高熔体强度聚丙烯，除了熔体强度提高50％以上外，其他性能也有所提高。以这种高熔体强度聚丙烯为原料，通过热成型的方法可制成具有一定深度的制品，采用挤出和注射方法可制备发泡聚丙烯。研制出的高发泡倍率的辐照交联发泡聚丙烯，发泡倍率可以达到20倍以上。　　辐照交联发泡聚丙烯具有重量轻、耐腐蚀和易降解等特点，可成为发泡聚苯乙烯的代用品，具有极好的推广应用前景。 2002年2月7日    </p>
 ]]></content>
          
          
@@ -1053,11 +1275,11 @@
 
     
   <url>
-    <loc>http://www.suliaobaozhuang.net/2014/12/31-news72000_194.html</loc>
+    <loc>http://www.suliaobaozhuang.net/2014/12/31-news72000_189.html</loc>
     <lastmod>2015-01-01T14:38:43.000Z</lastmod>
     <data>
         <display>
-        <title>欧洲聚氯乙烯工业面临改革</title>
+        <title>锦湖 ABS 报价提高</title>
         <pubTime>2014-12-31T14:11:42.000Z</pubTime>
         
         <tag>吸塑包装 </tag>
@@ -1072,7 +1294,7 @@
          
         <tag>塑料包装厂 </tag>
          
-         <content><![CDATA[<p>目前，欧洲聚氯乙烯工业正面临改革大潮。虽然欧洲聚氯乙烯工业已经进行过一些调整，生产商数量也从20世纪70年代的33家减少到现在的11家，但厂家数目仍然偏多。东欧情况略好，仅有2家大型聚氯乙烯生产厂家和一些小型厂家，而美国也只有4家规模较大的生产商。　　在过去2年内，西欧关闭了一些聚氯乙烯生产装置，但是由于新增了部分产能，净增加的年产能力达到了30万t。另外，预计东欧向西欧的聚氯乙烯出口量将减少。目前，西欧的聚氯乙烯进口量为50万~60万t／a，其中的30万~40万t／a从东欧进口，其余的从地中海沿岸国家和北美进口；西欧的聚氯乙烯年出口量达到了3 0万t，主要目标是亚洲国家。    2000年中欧和东欧的聚氯乙烯生产能力为188万t／a。根据预测，2001年中欧和东欧的聚氯乙烯消费量为77万t，2000年为74万t;而该地区2001年的聚氯乙烯产量估计为140万t，高于2000年130万t的水平。  2002年2月4日    </p>
+         <content><![CDATA[<p>最新消息，韩国锦湖公司已将2月份出口到中国市场的ABS报价提高到720美元 /吨（CFR中国主港，90天），目前还没有国内买家对此做出反应。    2002年1月31日    </p>
 ]]></content>
          
          
@@ -1086,11 +1308,11 @@
 
     
   <url>
-    <loc>http://www.suliaobaozhuang.net/2014/12/31-news72000_199.html</loc>
+    <loc>http://www.suliaobaozhuang.net/2014/12/31-news72000_193.html</loc>
     <lastmod>2015-01-01T14:38:43.000Z</lastmod>
     <data>
         <display>
-        <title>我国首次研制成功高熔体强度聚丙烯</title>
+        <title>工程塑料工业将进入快速发展时期</title>
         <pubTime>2014-12-31T14:11:42.000Z</pubTime>
         
         <tag>吸塑包装 </tag>
@@ -1105,7 +1327,7 @@
          
         <tag>塑料包装厂 </tag>
          
-         <content><![CDATA[<p>北京化工研究院日前在国内首次通过辐照支化方法研制出支化型高熔体强度聚丙烯。这种高熔体强度聚丙烯，除了熔体强度提高50％以上外，其他性能也有所提高。以这种高熔体强度聚丙烯为原料，通过热成型的方法可制成具有一定深度的制品，采用挤出和注射方法可制备发泡聚丙烯。研制出的高发泡倍率的辐照交联发泡聚丙烯，发泡倍率可以达到20倍以上。　　辐照交联发泡聚丙烯具有重量轻、耐腐蚀和易降解等特点，可成为发泡聚苯乙烯的代用品，具有极好的推广应用前景。 2002年2月7日    </p>
+         <content><![CDATA[<p>据中国工程塑料工业协会秘书长、高级工程师郑恺介绍，今后工程塑料制品将在家电、电子、汽车、通信、国防等领域得到快速发展。　　在合成树脂方面，由于采用新单体合成塑料的新品种难度大、周期长、投资大、收效慢，２０世纪８０年代后已呈减少趋势，短期内不会有太多新的品种面市，而一些用茂金属催化剂改变分子排列，从而改善材料性能的产品，这几年发展很快，如ＰＰＲ、ＳＰＳ等。另外，由现有聚合物和单体经过合金化、共混改性等技术制成新的品种材料，以满足市场的不同需求，使通用塑料工程化。工程塑料高性能化和低成本化已成为今后工程塑料品种发展的主要趋势，如改性ＰＡ、改性ＡＢＳ、改性ＰＯＭ、ＰＣ／ＡＢＳ合金、ＰＡ／ＰＰＯ合金、ＰＡ／ＰＰ合金等。    电子、信息和汽车行业的发展为工程塑料的发展带来了良好的机遇，同时也受到严峻的挑战。预计２００５年我国汽车产量将达到３２０万辆，其中轿车将占４０％左右，需要各种塑料配件将达４０万吨。汽车要解决油耗、噪音、尾气等问题，零部件和车身的部件要采用塑料复合材料，既要性能好，又要成本低。材料行业还要满足电子电气及信息产品小、轻，高性能化的要求。    环境问题是可持续发展战略中十分重要的一环。今后开发塑料产品时，不仅要考虑它的经济性，而且还要考虑环境因素，必须以节能、省料、有利环保为前提。企业的环境战略直接影响企业的竞争力，废旧材料的回用将成为塑料工业的战略课题，特别是耐用消费品的塑料件回收利用问题，将得到更大的关注。国外塑料包装回收率在６０％以上，我国还很低，今后塑料回收利用将成为一大发展热点。    在聚合物改性中，纳米材料和液晶材料复合新技术将给塑料业带来革命性的影响。由于这是一个新学科领域，涉及到凝聚态物理、量子物理、化学、材料、生物等多领域学科，势必对材料学产生深远的影响。今后高分子聚合纳米材料改性的研究是不可缺少的一部分，也会给工程塑料发展带来意想不到的结果。据了解，１９９９年全世界纳米复合材料用量仅为１０００吨，全部是ＰＡ材料，今后几年将增长很快，预计到２００４年用量将达到１２．５万吨，品种也会有所增加。另外特种工程塑料随着市场需求的增加，今后几年发展速度也会较快。 2002年2月4日    </p>
 ]]></content>
          
          
@@ -1218,11 +1440,11 @@
 
     
   <url>
-    <loc>http://www.suliaobaozhuang.net/2014/12/31-news72000_189.html</loc>
+    <loc>http://www.suliaobaozhuang.net/2014/12/31-news72000_186.html</loc>
     <lastmod>2015-01-01T14:38:43.000Z</lastmod>
     <data>
         <display>
-        <title>锦湖 ABS 报价提高</title>
+        <title>近期国内塑料市场动态</title>
         <pubTime>2014-12-31T14:11:42.000Z</pubTime>
         
         <tag>吸塑包装 </tag>
@@ -1237,40 +1459,7 @@
          
         <tag>塑料包装厂 </tag>
          
-         <content><![CDATA[<p>最新消息，韩国锦湖公司已将2月份出口到中国市场的ABS报价提高到720美元 /吨（CFR中国主港，90天），目前还没有国内买家对此做出反应。    2002年1月31日    </p>
-]]></content>
-         
-         
-           
-             
-              <breadCrumb title="news" url="http://www.suliaobaozhuang.net/c/news/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.suliaobaozhuang.net/2014/12/31-news72000_188.html</loc>
-    <lastmod>2015-01-01T14:38:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>长春应化所新型蓝光转化地膜可使水稻显著增产</title>
-        <pubTime>2014-12-31T14:11:42.000Z</pubTime>
-        
-        <tag>吸塑包装 </tag>
-         
-        <tag>吸塑制品 </tag>
-         
-        <tag>吸塑托盘 </tag>
-         
-        <tag>塑料包装 </tag>
-         
-        <tag>塑料包装盒 </tag>
-         
-        <tag>塑料包装厂 </tag>
-         
-         <content><![CDATA[<p>中科院长春应用化学研究所研制成功新近研制成功的蓝光转化膜日前通过了中国科学院组织的专家验收。鉴定意见称，使用该地膜可使水稻最多增产达９％。经过在吉林、辽宁、江苏、浙江、湖南等气候、地理条件差别很大的地区进行试用，增产效果均十分明显。　　据课题组介绍，蓝光转化膜因为可以更多更好地利用太阳能促进农作物增产增收，而成为当前农膜研发的热点。中科院长春应化所从１９９７年开始对水稻育秧蓝光转化膜进行应用研究，成功研制出稀土有机转光剂，解决了技术难题。同时科研人员还制备出适用不同水稻品种和南北方不同日照时间的系列蓝光膜。    据了解，该科研成果目前已成功实现转化。在吉林省辽源市塑料四厂建立的生产基地已形成年产５００吨蓝光膜母料和５０００吨蓝光膜的能力。 2002年1月31日    </p>
+         <content><![CDATA[<p>高压聚乙烯：本周，国内高压聚乙烯市场在经历了近一年多的低迷之后，终于出现了一轮较为强烈的上涨，各生产企业普遍将出厂价格上涨200－300元/吨以上，而中间商和下游用户也纷纷入市吸货，造成整个国内市场的价格全面上扬，部分地区的涨幅已达300-500元/吨不等（最高市场价在6500元/吨左右）。虽然每年一月份都是高压市场的需求淡季，但今年的情况却正好相反，市场之火爆也出乎了很多业内人士的预料。但是，应该看到此次行情主要还是由于中间商人为炒作造成的，再加上今年中国正式加入WTO后，国家农用膜料进口配额被取消，致使部分原来依赖进口配额的中间商和下游加工企业转而寻求其它资源（尤其是国内资源），致使国内资源略显紧张，而且关税的下调导致进口产品一时无法进入中国市场，也使得市场出现了供不应求的局面。此外，前期国内出厂价格价格偏低，市场也有存在着一定的反弹要求。后市来看，由于线性高压与高压市场价格差距仅为200－300元/吨，因此国内高压市场仍有一定的上涨空间，但上涨趋势已不会太大，随着春节的日益临近，市场价格将会逐渐趋于稳定。　　燕化公司LDPE装置1线产注塑料1I2A，价格为5600元/吨，上涨200元/吨2线正在转产1F7B，价格未定，三线产1C7A价格为6100元/吨，并取消区域价。目前LDPE整体销售非常火爆，库存很低，有继续上涨价格的可能性。目前新高压再次开车，有可能在近期出合格品。     低压聚乙烯：本周，国内低压聚乙烯市场极为火爆，市场在各贸易商大力炒作之下，短短几天竟然上涨了有近600－700元/吨以上，部分地区的拉丝料市场的价格已涨之至5900－6000元/吨，低压市场一月份会出现如此大的行情，在其历史同期都可以说是史无前例的。此次行情可以说是由多方面因素造成的，一是由于年前各企业为完成任务，无一例外的清空了库存，导致各企业库存都很低；二是国内低压价格在经历了一年多的下跌之后，已到了跌无可跌的地位，市场有强烈的反弹愿望；三是中国加入WTO之后，进口产品纷纷上调其出口报价，再加上部分国外聚乙烯装置出现故障或者停产检修，都导致市场上进口资源量较少；四是由于前期市场低迷，国内各中间商的手中都不敢囤货，他们手中有大量闲散资金，因此一旦市场有所启动就纷纷入市吸货，导致市场出现供不应求的情况。后市来看，国内低压聚乙烯市场上涨的幅度已明显偏大，虽然还有可能进一步上涨，但风险已大，随时有上涨乏力的可能性出现。     燕化HDPE装置1条线产5000S，售价 5600元/吨，比上周上涨300元/吨，本周连续2次上调出厂价格，目前销售仍非常顺畅，库存很少。另1条线产中空料5200B，价格为5750元/吨，比上周上调450元/吨，销售也较好，库存不多，而其它牌号均无货。     聚丙烯：元旦过后国内市场出现明显反弹，尤其是拉丝市场供需两旺，厂家库存急剧减少，大量现货被中间商“哄抢”，以应春节后需求恢复、价格有望反弹之需。与此对应，共聚料、膜料、纤维料市场及企业价格均没有过旺反应。韩国、台塑、福聚等PP厂商因中国市场强劲的需求而受益，大量1月现货已经订购一空，2月报盘全面上扬。1月底-春节前，国内塑料市场热销局面将可能逐渐降温。 　　燕化PP装置1线生产拉丝料2401，售价4900元/吨（有区域价），比前期上调200元/吨，2线生产洗衣机专用料1947，价格5500元/吨（有区域价），3线产薄膜料F1002，价格为4700元/吨。目前，拉丝料S1003价格也为4900元/吨（有区域价），上涨200元/吨，其它牌号价格暂时无变化。目前各品种中拉丝料销售情况较好，下周有可能继续上调价格，其它品种销售也较好，总体库存都不高。     聚苯乙烯：本周，国内聚苯乙烯市场继续好转，在各企业上调出厂价格的基础上，各地市场的价格也有进一步的上涨，涨幅普遍在100－300元/吨左右。目前市场成交比前期变得更加红火，许多贸易商和最终用户都已开始加大采购力度，购销两旺的局面已然形成。近期市场之所以表现的较好，主要是由于国内部分聚苯乙烯生产企业因故停车，导致市场供应有所减少，再加上苯乙烯市场仍处于较高水平，也促使聚苯乙烯市场有所反弹，此外，目前进口报价在500美元/吨左右，折合人民币比国内市场价格高200－300元/吨左右，这也是对市场有一定的刺激作用。后市来看，国内聚苯乙烯市场虽然还有一定的上升空间，但受苯乙烯市场有所走软的影响，市场继续大幅上涨的可能性微乎其微，在高位横盘整理的可能性较大。     燕化PS因装置故障暂时停车，透苯666D出厂价格为5200元/吨，无库存而前期转产的688C(双向拉伸板材料)，售价为5400元/吨，销售一般。  来源:全国塑料加工工业信息中心 发布日期:2002-1-28     2002年1月28日    </p>
 ]]></content>
          
          
@@ -1317,11 +1506,11 @@
 
     
   <url>
-    <loc>http://www.suliaobaozhuang.net/2014/12/31-news72000_186.html</loc>
+    <loc>http://www.suliaobaozhuang.net/2014/12/31-news72000_188.html</loc>
     <lastmod>2015-01-01T14:38:43.000Z</lastmod>
     <data>
         <display>
-        <title>近期国内塑料市场动态</title>
+        <title>长春应化所新型蓝光转化地膜可使水稻显著增产</title>
         <pubTime>2014-12-31T14:11:42.000Z</pubTime>
         
         <tag>吸塑包装 </tag>
@@ -1336,7 +1525,7 @@
          
         <tag>塑料包装厂 </tag>
          
-         <content><![CDATA[<p>高压聚乙烯：本周，国内高压聚乙烯市场在经历了近一年多的低迷之后，终于出现了一轮较为强烈的上涨，各生产企业普遍将出厂价格上涨200－300元/吨以上，而中间商和下游用户也纷纷入市吸货，造成整个国内市场的价格全面上扬，部分地区的涨幅已达300-500元/吨不等（最高市场价在6500元/吨左右）。虽然每年一月份都是高压市场的需求淡季，但今年的情况却正好相反，市场之火爆也出乎了很多业内人士的预料。但是，应该看到此次行情主要还是由于中间商人为炒作造成的，再加上今年中国正式加入WTO后，国家农用膜料进口配额被取消，致使部分原来依赖进口配额的中间商和下游加工企业转而寻求其它资源（尤其是国内资源），致使国内资源略显紧张，而且关税的下调导致进口产品一时无法进入中国市场，也使得市场出现了供不应求的局面。此外，前期国内出厂价格价格偏低，市场也有存在着一定的反弹要求。后市来看，由于线性高压与高压市场价格差距仅为200－300元/吨，因此国内高压市场仍有一定的上涨空间，但上涨趋势已不会太大，随着春节的日益临近，市场价格将会逐渐趋于稳定。　　燕化公司LDPE装置1线产注塑料1I2A，价格为5600元/吨，上涨200元/吨2线正在转产1F7B，价格未定，三线产1C7A价格为6100元/吨，并取消区域价。目前LDPE整体销售非常火爆，库存很低，有继续上涨价格的可能性。目前新高压再次开车，有可能在近期出合格品。     低压聚乙烯：本周，国内低压聚乙烯市场极为火爆，市场在各贸易商大力炒作之下，短短几天竟然上涨了有近600－700元/吨以上，部分地区的拉丝料市场的价格已涨之至5900－6000元/吨，低压市场一月份会出现如此大的行情，在其历史同期都可以说是史无前例的。此次行情可以说是由多方面因素造成的，一是由于年前各企业为完成任务，无一例外的清空了库存，导致各企业库存都很低；二是国内低压价格在经历了一年多的下跌之后，已到了跌无可跌的地位，市场有强烈的反弹愿望；三是中国加入WTO之后，进口产品纷纷上调其出口报价，再加上部分国外聚乙烯装置出现故障或者停产检修，都导致市场上进口资源量较少；四是由于前期市场低迷，国内各中间商的手中都不敢囤货，他们手中有大量闲散资金，因此一旦市场有所启动就纷纷入市吸货，导致市场出现供不应求的情况。后市来看，国内低压聚乙烯市场上涨的幅度已明显偏大，虽然还有可能进一步上涨，但风险已大，随时有上涨乏力的可能性出现。     燕化HDPE装置1条线产5000S，售价 5600元/吨，比上周上涨300元/吨，本周连续2次上调出厂价格，目前销售仍非常顺畅，库存很少。另1条线产中空料5200B，价格为5750元/吨，比上周上调450元/吨，销售也较好，库存不多，而其它牌号均无货。     聚丙烯：元旦过后国内市场出现明显反弹，尤其是拉丝市场供需两旺，厂家库存急剧减少，大量现货被中间商“哄抢”，以应春节后需求恢复、价格有望反弹之需。与此对应，共聚料、膜料、纤维料市场及企业价格均没有过旺反应。韩国、台塑、福聚等PP厂商因中国市场强劲的需求而受益，大量1月现货已经订购一空，2月报盘全面上扬。1月底-春节前，国内塑料市场热销局面将可能逐渐降温。 　　燕化PP装置1线生产拉丝料2401，售价4900元/吨（有区域价），比前期上调200元/吨，2线生产洗衣机专用料1947，价格5500元/吨（有区域价），3线产薄膜料F1002，价格为4700元/吨。目前，拉丝料S1003价格也为4900元/吨（有区域价），上涨200元/吨，其它牌号价格暂时无变化。目前各品种中拉丝料销售情况较好，下周有可能继续上调价格，其它品种销售也较好，总体库存都不高。     聚苯乙烯：本周，国内聚苯乙烯市场继续好转，在各企业上调出厂价格的基础上，各地市场的价格也有进一步的上涨，涨幅普遍在100－300元/吨左右。目前市场成交比前期变得更加红火，许多贸易商和最终用户都已开始加大采购力度，购销两旺的局面已然形成。近期市场之所以表现的较好，主要是由于国内部分聚苯乙烯生产企业因故停车，导致市场供应有所减少，再加上苯乙烯市场仍处于较高水平，也促使聚苯乙烯市场有所反弹，此外，目前进口报价在500美元/吨左右，折合人民币比国内市场价格高200－300元/吨左右，这也是对市场有一定的刺激作用。后市来看，国内聚苯乙烯市场虽然还有一定的上升空间，但受苯乙烯市场有所走软的影响，市场继续大幅上涨的可能性微乎其微，在高位横盘整理的可能性较大。     燕化PS因装置故障暂时停车，透苯666D出厂价格为5200元/吨，无库存而前期转产的688C(双向拉伸板材料)，售价为5400元/吨，销售一般。  来源:全国塑料加工工业信息中心 发布日期:2002-1-28     2002年1月28日    </p>
+         <content><![CDATA[<p>中科院长春应用化学研究所研制成功新近研制成功的蓝光转化膜日前通过了中国科学院组织的专家验收。鉴定意见称，使用该地膜可使水稻最多增产达９％。经过在吉林、辽宁、江苏、浙江、湖南等气候、地理条件差别很大的地区进行试用，增产效果均十分明显。　　据课题组介绍，蓝光转化膜因为可以更多更好地利用太阳能促进农作物增产增收，而成为当前农膜研发的热点。中科院长春应化所从１９９７年开始对水稻育秧蓝光转化膜进行应用研究，成功研制出稀土有机转光剂，解决了技术难题。同时科研人员还制备出适用不同水稻品种和南北方不同日照时间的系列蓝光膜。    据了解，该科研成果目前已成功实现转化。在吉林省辽源市塑料四厂建立的生产基地已形成年产５００吨蓝光膜母料和５０００吨蓝光膜的能力。 2002年1月31日    </p>
 ]]></content>
          
          
@@ -1350,11 +1539,11 @@
 
     
   <url>
-    <loc>http://www.suliaobaozhuang.net/2014/12/31-news72000_172.html</loc>
-    <lastmod>2015-01-01T14:38:42.000Z</lastmod>
+    <loc>http://www.suliaobaozhuang.net/2014/12/31-news72000_194.html</loc>
+    <lastmod>2015-01-01T14:38:43.000Z</lastmod>
     <data>
         <display>
-        <title>国内最大塑料油箱基地在江苏投产</title>
+        <title>欧洲聚氯乙烯工业面临改革</title>
         <pubTime>2014-12-31T14:11:42.000Z</pubTime>
         
         <tag>吸塑包装 </tag>
@@ -1369,73 +1558,7 @@
          
         <tag>塑料包装厂 </tag>
          
-         <content><![CDATA[<p>江苏泰兴工程塑料制造公司与中国科学院合作，投资近亿元兴建了国内最大的汽车、摩托车塑料油箱生产基地。目前该项目已竣工投产，产品销往东风、北京吉普、沈阳金杯等30多个厂家。    该公司生产的微型车、轿车、轻型车塑料油箱3个产品全部获得了国家科技成果奖，去年销售额超亿元，全国已有数百万辆汽车用上了该公司生产的产品。    泰兴工程塑料制造公司引进德国克鲁普公司的先进技术，采用欧盟的技术标准，生产出了只有欧美少数几个国家能生产的汽车用6层塑料燃油箱。该油箱从根本上解决了汽车燃油箱的渗漏现象，被称为“零渗漏”，同时净化了燃油，消除了铅污染。 2002年1月16日    </p>
-]]></content>
-         
-         
-           
-             
-              <breadCrumb title="news" url="http://www.suliaobaozhuang.net/c/news/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.suliaobaozhuang.net/2014/12/31-news72000_173.html</loc>
-    <lastmod>2015-01-01T14:38:42.000Z</lastmod>
-    <data>
-        <display>
-        <title>国内各大PS厂家产销动态</title>
-        <pubTime>2014-12-31T14:11:42.000Z</pubTime>
-        
-        <tag>吸塑包装 </tag>
-         
-        <tag>吸塑制品 </tag>
-         
-        <tag>吸塑托盘 </tag>
-         
-        <tag>塑料包装 </tag>
-         
-        <tag>塑料包装盒 </tag>
-         
-        <tag>塑料包装厂 </tag>
-         
-         <content><![CDATA[<p>目前国内各大PS厂家挂牌的出厂价格和产销情况分别如下：    汕头海洋目前库存量较小，PS三条生产线全部开车，价格同比前期持平，透苯 SG-23 价格为5300元/T、改苯 SH-65 价格为5600元/T； 湛江新中美进入接管状态，透苯 525 和 535 都为5100元/T，销售情况一般；广石化PS生产线全面停产，库存也较少，改苯 825 报价为5300元/T；燕山石化 透苯 666D 调降到5000元/T，销售情况显得非常活跃；而盘锦 改苯 525 价格为5450元/T,     由于有部分企业下单提货补充库存，销售情况比较正常，价格较前期处于比较坚挺的状态；中海三水 透苯 525 价格为5250元/T；镇江奇美日前刚刚提价，目前 透苯 PG-33 出厂价格为5900元/T；扬子巴斯夫同样提价，目前PS离厂价格 透苯 158K 报5400元/T、改苯报 6100元/T。  2002年1月17日    </p>
-]]></content>
-         
-         
-           
-             
-              <breadCrumb title="news" url="http://www.suliaobaozhuang.net/c/news/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.suliaobaozhuang.net/2014/12/31-news72000_174.html</loc>
-    <lastmod>2015-01-01T14:38:42.000Z</lastmod>
-    <data>
-        <display>
-        <title>浙江华之杰开发试制的仿木塑窗异型材通过鉴定</title>
-        <pubTime>2014-12-31T14:11:42.000Z</pubTime>
-        
-        <tag>吸塑包装 </tag>
-         
-        <tag>吸塑制品 </tag>
-         
-        <tag>吸塑托盘 </tag>
-         
-        <tag>塑料包装 </tag>
-         
-        <tag>塑料包装盒 </tag>
-         
-        <tag>塑料包装厂 </tag>
-         
-         <content><![CDATA[<p>由浙江华之杰塑料建材有限公司开发试制的仿木塑窗异型材，通过了浙江省化工厅新技术产品鉴定。    这种型材具有耐老化、卫生性好、包泽亮丽、焊接强度高、外形美观自然、尺寸稳定性好等诸多特点，有效拓宽了PVC塑窗异型材的应用推广范围，填被了国内这类产品的空白。    这种型材由表及里都存在着与天然木纹相仿的纹理，仿木效果逼真，装饰性能良好，可充分满足内外墙装饰装修的和谐与统一。  2002年1月17日    </p>
+         <content><![CDATA[<p>目前，欧洲聚氯乙烯工业正面临改革大潮。虽然欧洲聚氯乙烯工业已经进行过一些调整，生产商数量也从20世纪70年代的33家减少到现在的11家，但厂家数目仍然偏多。东欧情况略好，仅有2家大型聚氯乙烯生产厂家和一些小型厂家，而美国也只有4家规模较大的生产商。　　在过去2年内，西欧关闭了一些聚氯乙烯生产装置，但是由于新增了部分产能，净增加的年产能力达到了30万t。另外，预计东欧向西欧的聚氯乙烯出口量将减少。目前，西欧的聚氯乙烯进口量为50万~60万t／a，其中的30万~40万t／a从东欧进口，其余的从地中海沿岸国家和北美进口；西欧的聚氯乙烯年出口量达到了3 0万t，主要目标是亚洲国家。    2000年中欧和东欧的聚氯乙烯生产能力为188万t／a。根据预测，2001年中欧和东欧的聚氯乙烯消费量为77万t，2000年为74万t;而该地区2001年的聚氯乙烯产量估计为140万t，高于2000年130万t的水平。  2002年2月4日    </p>
 ]]></content>
          
          
@@ -1647,11 +1770,11 @@
 
     
   <url>
-    <loc>http://www.suliaobaozhuang.net/2014/12/31-news72000_185.html</loc>
+    <loc>http://www.suliaobaozhuang.net/2014/12/31-news72000_182.html</loc>
     <lastmod>2015-01-01T14:38:42.000Z</lastmod>
     <data>
         <display>
-        <title>上海化工区建设又获新进展</title>
+        <title>煤科总院上海分院开发环氧树脂设备</title>
         <pubTime>2014-12-31T14:11:42.000Z</pubTime>
         
         <tag>吸塑包装 </tag>
@@ -1666,40 +1789,7 @@
          
         <tag>塑料包装厂 </tag>
          
-         <content><![CDATA[<p>ＢＰ（英国石油公司）化工（中国）总裁格拉姆·;哈特（Ｇｒａｈｍ　Ｈｕｎｔ）和上海化工区发展有限公司代表昨天下午在此间互换签字文本，上海化工区龙头项目－－９０万吨乙烯及配套工程正式获得近２平方公里的土地使用权。这标志着该项目继１月１１日获得１８亿美元贷款后，现已进入实质性建设阶段。　　新年伊始，上海化工区建设如火如荼。拥有５０００吨－２５０００吨级共５个泊位、１５００米长栈桥的专用码头和仓储区域施工正进入关键阶段；日处理７０００吨污水的化工区污水处理厂一期工程建设正热火朝天地进行，８个月后即可竣工。１月１１日，ＢＰ在华合资公司－－上海赛科石油化工公司投资的年产９０万吨乙烯项目贷款落实，标志着上海化工区第一个世界级一体化特大型石油化工项目所需资金全部到位；在昨天下午举行的签约仪式上，该龙头项目获得上海市Ａ１、Ａ２、Ａ３和Ｂ１四幅地块的使用权，这表明该项目已进入实质性建设阶段。　　据悉，一期投资高达１５００亿元、致力于创造专业化模式的上海化工区，经过一年的努力，主体项目促进和公用工程建设双管齐下，目前已具备主体项目开工所需要的基础条件。区内一期１０平方公里区域“七通一平”市政基础设施建设已完成，Ａ４高速公路延伸段等一批化工区外围“大市政配套工程”也已相继开工，ＢＰ（英国石油公司）、ＢＡＳＦ（巴斯夫）、ＢＡＹＥＲ（拜耳）等一批骨干项目已实质性启动。与此同时，公用配套工程建设也在加快，水务、物流和工业气体等公司相继成立，化工区管理中心、水厂、污水处理一期工程、海运码头一期５０００吨液体码头等工程纷纷开标打桩，储罐区辅助设施和大件码头项目也开工在即。　　据介绍，上海赛科公司建设的年产９０万吨乙烯等８套世界级规模的生产装置，是目前我国最大型新建石化装置，预计２００４年底完工。该项目总投资预计２２４．４亿元人民币，约合２７亿美元。业内人士分析，上海化工区建成后，其乙烯生产能力可达中国总生产能力的三分之一以上，成为亚洲第一的化工区。２００５年化工区的工业增加值有望达到１５００亿元。 2002年1月25日    </p>
-]]></content>
-         
-         
-           
-             
-              <breadCrumb title="news" url="http://www.suliaobaozhuang.net/c/news/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.suliaobaozhuang.net/2014/12/31-news72000_183.html</loc>
-    <lastmod>2015-01-01T14:38:42.000Z</lastmod>
-    <data>
-        <display>
-        <title>温州民企富有魅力、充满挑战　上市公司老总跑来“打工”</title>
-        <pubTime>2014-12-31T14:11:42.000Z</pubTime>
-        
-        <tag>吸塑包装 </tag>
-         
-        <tag>吸塑制品 </tag>
-         
-        <tag>吸塑托盘 </tag>
-         
-        <tag>塑料包装 </tag>
-         
-        <tag>塑料包装盒 </tag>
-         
-        <tag>塑料包装厂 </tag>
-         
-         <content><![CDATA[<p>　    放着上市公司的总裁职务不干，却跑到温州民营企业“打工”———上演这一幕的两位“主角”昨天首次出现在天正集团数千名职工面前。 　　这两位“主角”是几个月前还是国嘉光电股份有限公司总裁的何捷和国电南京自动化股份有限公司总裁的程传玲。何捷最擅长的是资本运营和企业发展战略的制定；而程传玲则是科技开发和管理皆精的专家，由他经营多年的“国电南自”被评为上市公司50强。 　　何捷、程传玲与“天正”结缘始于中欧国际工商管理学院，在这个亚太地区最好的工商管理学院，他们与“天正”董事长高天乐是同班同学。程传玲说，他们相互欣赏、敬佩对方的才学和为人，同时，他和何捷发现温州民营企业的机制和活力，是许多上市公司也难以做到的，便萌发到“天正”干一番事业的念头。 　　而曾被外资企业邀请的何捷则称，他们更喜欢接受挑战，现在，外资企业各方面都很成熟，而温州的民营企业正在深化改革，有许多事情可做。 　　何捷、程传玲现在“天正”分别担任执行总裁、副总裁。他们开始在推进“天正”上市和技术进步方面发挥了重要作用。 　　以前曾忙得团团转的高天乐现在显得很轻松，他说，上市公司总裁的水平确非一般，一些思路让人深受启发，更重要的是他们进一步规范了企业的发展，以前一些民营企业制定发展战略时，常信口开河：明年销售额达50亿元。也不管是否能做到，反正也没人管。现在，他们制定了切实的目标、计划和实施步骤。 　　在温州，外地上市公司的总裁辞职前来尚属首例。有消息说，何捷、程传玲在“天正”的年薪可能称不上新闻，但拥有比较诱人的期权。 　　●王若江 2002年1月24日    </p>
+         <content><![CDATA[<p>　　由煤科总院上海分院研制的HAG型全液压环氧树脂自动压力凝胶成型机，已在全国10多个省市投入使用，年产值达到3000多万元。该设备市场占有率已达80％以上，居全国第一。　　环氧树脂类设备以前大都依赖进口，价格贵得惊人，按可比价格计算，开发生产环氧树脂设备每年可为国家节省3000多万美元。受国家环氧树脂APG项目组的委托，煤炭科学研究总院上海分院液压研究所以庞鸣崴为主的课题组，自筹资金，凭借一组引进设备的照片和样本，开始了环氧树脂设备的研制工作。经过7年多的努力，终于完成了施工图纸设计、样机制造，并投入工业性生产。1997年，HAG887型成型机通过国家机械部部级鉴定。2001年，HAG888－V型成型机通过上海市科委的鉴定。该类设备先后荣获上海市“四新”产品博览会金奖、上海市第五届科学技术博览会金奖、上海科学院技术进步一等奖。上海分院环氧树脂项目部近期正在着手开发硅橡胶成型设备、互感器、复合绝缘套管等新的项目，以加强技术储备，增强发展后劲。  2002年1月24日    </p>
 ]]></content>
          
          
@@ -1779,6 +1869,39 @@
 
     
   <url>
+    <loc>http://www.suliaobaozhuang.net/2014/12/31-news72000_185.html</loc>
+    <lastmod>2015-01-01T14:38:42.000Z</lastmod>
+    <data>
+        <display>
+        <title>上海化工区建设又获新进展</title>
+        <pubTime>2014-12-31T14:11:42.000Z</pubTime>
+        
+        <tag>吸塑包装 </tag>
+         
+        <tag>吸塑制品 </tag>
+         
+        <tag>吸塑托盘 </tag>
+         
+        <tag>塑料包装 </tag>
+         
+        <tag>塑料包装盒 </tag>
+         
+        <tag>塑料包装厂 </tag>
+         
+         <content><![CDATA[<p>ＢＰ（英国石油公司）化工（中国）总裁格拉姆·;哈特（Ｇｒａｈｍ　Ｈｕｎｔ）和上海化工区发展有限公司代表昨天下午在此间互换签字文本，上海化工区龙头项目－－９０万吨乙烯及配套工程正式获得近２平方公里的土地使用权。这标志着该项目继１月１１日获得１８亿美元贷款后，现已进入实质性建设阶段。　　新年伊始，上海化工区建设如火如荼。拥有５０００吨－２５０００吨级共５个泊位、１５００米长栈桥的专用码头和仓储区域施工正进入关键阶段；日处理７０００吨污水的化工区污水处理厂一期工程建设正热火朝天地进行，８个月后即可竣工。１月１１日，ＢＰ在华合资公司－－上海赛科石油化工公司投资的年产９０万吨乙烯项目贷款落实，标志着上海化工区第一个世界级一体化特大型石油化工项目所需资金全部到位；在昨天下午举行的签约仪式上，该龙头项目获得上海市Ａ１、Ａ２、Ａ３和Ｂ１四幅地块的使用权，这表明该项目已进入实质性建设阶段。　　据悉，一期投资高达１５００亿元、致力于创造专业化模式的上海化工区，经过一年的努力，主体项目促进和公用工程建设双管齐下，目前已具备主体项目开工所需要的基础条件。区内一期１０平方公里区域“七通一平”市政基础设施建设已完成，Ａ４高速公路延伸段等一批化工区外围“大市政配套工程”也已相继开工，ＢＰ（英国石油公司）、ＢＡＳＦ（巴斯夫）、ＢＡＹＥＲ（拜耳）等一批骨干项目已实质性启动。与此同时，公用配套工程建设也在加快，水务、物流和工业气体等公司相继成立，化工区管理中心、水厂、污水处理一期工程、海运码头一期５０００吨液体码头等工程纷纷开标打桩，储罐区辅助设施和大件码头项目也开工在即。　　据介绍，上海赛科公司建设的年产９０万吨乙烯等８套世界级规模的生产装置，是目前我国最大型新建石化装置，预计２００４年底完工。该项目总投资预计２２４．４亿元人民币，约合２７亿美元。业内人士分析，上海化工区建成后，其乙烯生产能力可达中国总生产能力的三分之一以上，成为亚洲第一的化工区。２００５年化工区的工业增加值有望达到１５００亿元。 2002年1月25日    </p>
+]]></content>
+         
+         
+           
+             
+              <breadCrumb title="news" url="http://www.suliaobaozhuang.net/c/news/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.suliaobaozhuang.net/2014/12/31-news72000_171.html</loc>
     <lastmod>2015-01-01T14:38:42.000Z</lastmod>
     <data>
@@ -1812,11 +1935,11 @@
 
     
   <url>
-    <loc>http://www.suliaobaozhuang.net/2014/12/31-news72000_182.html</loc>
+    <loc>http://www.suliaobaozhuang.net/2014/12/31-news72000_172.html</loc>
     <lastmod>2015-01-01T14:38:42.000Z</lastmod>
     <data>
         <display>
-        <title>煤科总院上海分院开发环氧树脂设备</title>
+        <title>国内最大塑料油箱基地在江苏投产</title>
         <pubTime>2014-12-31T14:11:42.000Z</pubTime>
         
         <tag>吸塑包装 </tag>
@@ -1831,7 +1954,106 @@
          
         <tag>塑料包装厂 </tag>
          
-         <content><![CDATA[<p>　　由煤科总院上海分院研制的HAG型全液压环氧树脂自动压力凝胶成型机，已在全国10多个省市投入使用，年产值达到3000多万元。该设备市场占有率已达80％以上，居全国第一。　　环氧树脂类设备以前大都依赖进口，价格贵得惊人，按可比价格计算，开发生产环氧树脂设备每年可为国家节省3000多万美元。受国家环氧树脂APG项目组的委托，煤炭科学研究总院上海分院液压研究所以庞鸣崴为主的课题组，自筹资金，凭借一组引进设备的照片和样本，开始了环氧树脂设备的研制工作。经过7年多的努力，终于完成了施工图纸设计、样机制造，并投入工业性生产。1997年，HAG887型成型机通过国家机械部部级鉴定。2001年，HAG888－V型成型机通过上海市科委的鉴定。该类设备先后荣获上海市“四新”产品博览会金奖、上海市第五届科学技术博览会金奖、上海科学院技术进步一等奖。上海分院环氧树脂项目部近期正在着手开发硅橡胶成型设备、互感器、复合绝缘套管等新的项目，以加强技术储备，增强发展后劲。  2002年1月24日    </p>
+         <content><![CDATA[<p>江苏泰兴工程塑料制造公司与中国科学院合作，投资近亿元兴建了国内最大的汽车、摩托车塑料油箱生产基地。目前该项目已竣工投产，产品销往东风、北京吉普、沈阳金杯等30多个厂家。    该公司生产的微型车、轿车、轻型车塑料油箱3个产品全部获得了国家科技成果奖，去年销售额超亿元，全国已有数百万辆汽车用上了该公司生产的产品。    泰兴工程塑料制造公司引进德国克鲁普公司的先进技术，采用欧盟的技术标准，生产出了只有欧美少数几个国家能生产的汽车用6层塑料燃油箱。该油箱从根本上解决了汽车燃油箱的渗漏现象，被称为“零渗漏”，同时净化了燃油，消除了铅污染。 2002年1月16日    </p>
+]]></content>
+         
+         
+           
+             
+              <breadCrumb title="news" url="http://www.suliaobaozhuang.net/c/news/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.suliaobaozhuang.net/2014/12/31-news72000_173.html</loc>
+    <lastmod>2015-01-01T14:38:42.000Z</lastmod>
+    <data>
+        <display>
+        <title>国内各大PS厂家产销动态</title>
+        <pubTime>2014-12-31T14:11:42.000Z</pubTime>
+        
+        <tag>吸塑包装 </tag>
+         
+        <tag>吸塑制品 </tag>
+         
+        <tag>吸塑托盘 </tag>
+         
+        <tag>塑料包装 </tag>
+         
+        <tag>塑料包装盒 </tag>
+         
+        <tag>塑料包装厂 </tag>
+         
+         <content><![CDATA[<p>目前国内各大PS厂家挂牌的出厂价格和产销情况分别如下：    汕头海洋目前库存量较小，PS三条生产线全部开车，价格同比前期持平，透苯 SG-23 价格为5300元/T、改苯 SH-65 价格为5600元/T； 湛江新中美进入接管状态，透苯 525 和 535 都为5100元/T，销售情况一般；广石化PS生产线全面停产，库存也较少，改苯 825 报价为5300元/T；燕山石化 透苯 666D 调降到5000元/T，销售情况显得非常活跃；而盘锦 改苯 525 价格为5450元/T,     由于有部分企业下单提货补充库存，销售情况比较正常，价格较前期处于比较坚挺的状态；中海三水 透苯 525 价格为5250元/T；镇江奇美日前刚刚提价，目前 透苯 PG-33 出厂价格为5900元/T；扬子巴斯夫同样提价，目前PS离厂价格 透苯 158K 报5400元/T、改苯报 6100元/T。  2002年1月17日    </p>
+]]></content>
+         
+         
+           
+             
+              <breadCrumb title="news" url="http://www.suliaobaozhuang.net/c/news/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.suliaobaozhuang.net/2014/12/31-news72000_174.html</loc>
+    <lastmod>2015-01-01T14:38:42.000Z</lastmod>
+    <data>
+        <display>
+        <title>浙江华之杰开发试制的仿木塑窗异型材通过鉴定</title>
+        <pubTime>2014-12-31T14:11:42.000Z</pubTime>
+        
+        <tag>吸塑包装 </tag>
+         
+        <tag>吸塑制品 </tag>
+         
+        <tag>吸塑托盘 </tag>
+         
+        <tag>塑料包装 </tag>
+         
+        <tag>塑料包装盒 </tag>
+         
+        <tag>塑料包装厂 </tag>
+         
+         <content><![CDATA[<p>由浙江华之杰塑料建材有限公司开发试制的仿木塑窗异型材，通过了浙江省化工厅新技术产品鉴定。    这种型材具有耐老化、卫生性好、包泽亮丽、焊接强度高、外形美观自然、尺寸稳定性好等诸多特点，有效拓宽了PVC塑窗异型材的应用推广范围，填被了国内这类产品的空白。    这种型材由表及里都存在着与天然木纹相仿的纹理，仿木效果逼真，装饰性能良好，可充分满足内外墙装饰装修的和谐与统一。  2002年1月17日    </p>
+]]></content>
+         
+         
+           
+             
+              <breadCrumb title="news" url="http://www.suliaobaozhuang.net/c/news/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.suliaobaozhuang.net/2014/12/31-news72000_183.html</loc>
+    <lastmod>2015-01-01T14:38:42.000Z</lastmod>
+    <data>
+        <display>
+        <title>温州民企富有魅力、充满挑战　上市公司老总跑来“打工”</title>
+        <pubTime>2014-12-31T14:11:42.000Z</pubTime>
+        
+        <tag>吸塑包装 </tag>
+         
+        <tag>吸塑制品 </tag>
+         
+        <tag>吸塑托盘 </tag>
+         
+        <tag>塑料包装 </tag>
+         
+        <tag>塑料包装盒 </tag>
+         
+        <tag>塑料包装厂 </tag>
+         
+         <content><![CDATA[<p>　    放着上市公司的总裁职务不干，却跑到温州民营企业“打工”———上演这一幕的两位“主角”昨天首次出现在天正集团数千名职工面前。 　　这两位“主角”是几个月前还是国嘉光电股份有限公司总裁的何捷和国电南京自动化股份有限公司总裁的程传玲。何捷最擅长的是资本运营和企业发展战略的制定；而程传玲则是科技开发和管理皆精的专家，由他经营多年的“国电南自”被评为上市公司50强。 　　何捷、程传玲与“天正”结缘始于中欧国际工商管理学院，在这个亚太地区最好的工商管理学院，他们与“天正”董事长高天乐是同班同学。程传玲说，他们相互欣赏、敬佩对方的才学和为人，同时，他和何捷发现温州民营企业的机制和活力，是许多上市公司也难以做到的，便萌发到“天正”干一番事业的念头。 　　而曾被外资企业邀请的何捷则称，他们更喜欢接受挑战，现在，外资企业各方面都很成熟，而温州的民营企业正在深化改革，有许多事情可做。 　　何捷、程传玲现在“天正”分别担任执行总裁、副总裁。他们开始在推进“天正”上市和技术进步方面发挥了重要作用。 　　以前曾忙得团团转的高天乐现在显得很轻松，他说，上市公司总裁的水平确非一般，一些思路让人深受启发，更重要的是他们进一步规范了企业的发展，以前一些民营企业制定发展战略时，常信口开河：明年销售额达50亿元。也不管是否能做到，反正也没人管。现在，他们制定了切实的目标、计划和实施步骤。 　　在温州，外地上市公司的总裁辞职前来尚属首例。有消息说，何捷、程传玲在“天正”的年薪可能称不上新闻，但拥有比较诱人的期权。 　　●王若江 2002年1月24日    </p>
 ]]></content>
          
          
@@ -2835,39 +3057,6 @@
 
     
   <url>
-    <loc>http://www.suliaobaozhuang.net/2014/12/31-news72000_131.html</loc>
-    <lastmod>2015-01-01T14:38:39.000Z</lastmod>
-    <data>
-        <display>
-        <title>大连将出现塑料啤酒瓶</title>
-        <pubTime>2014-12-31T14:11:42.000Z</pubTime>
-        
-        <tag>吸塑包装 </tag>
-         
-        <tag>吸塑制品 </tag>
-         
-        <tag>吸塑托盘 </tag>
-         
-        <tag>塑料包装 </tag>
-         
-        <tag>塑料包装盒 </tag>
-         
-        <tag>塑料包装厂 </tag>
-         
-         <content><![CDATA[<p>&nbsp; &nbsp; &nbsp; &nbsp; 一种可以回收利用具有较强的环保性的塑料啤酒瓶，即将在辽宁大连出现。&nbsp; &nbsp; 据了解，目前国外一些大的啤酒厂，都开始部分生产塑料瓶装啤酒，而且技术越来越先进的新型塑料瓶，不仅保持了啤酒自身的香气，还可以回收利用，具有较强的环保性。&nbsp; &nbsp; 据介绍，随着塑料啤酒瓶存在的阻隔性、啤酒风味和贮藏期限等问题的解决，用塑料瓶装啤酒很快会成为现实。中国新闻社 2001年12月12日 &nbsp; &nbsp;</p>
-]]></content>
-         
-         
-           
-             
-              <breadCrumb title="news" url="http://www.suliaobaozhuang.net/c/news/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.suliaobaozhuang.net/2014/12/31-news72000_130.html</loc>
     <lastmod>2015-01-01T14:38:39.000Z</lastmod>
     <data>
@@ -3033,11 +3222,11 @@
 
     
   <url>
-    <loc>http://www.suliaobaozhuang.net/2014/12/31-news72000_132.html</loc>
+    <loc>http://www.suliaobaozhuang.net/2014/12/31-news72000_131.html</loc>
     <lastmod>2015-01-01T14:38:39.000Z</lastmod>
     <data>
         <display>
-        <title>软包装的2002年</title>
+        <title>大连将出现塑料啤酒瓶</title>
         <pubTime>2014-12-31T14:11:42.000Z</pubTime>
         
         <tag>吸塑包装 </tag>
@@ -3052,7 +3241,7 @@
          
         <tag>塑料包装厂 </tag>
          
-         <content><![CDATA[<p>　　到2002年，软包装在食品业的销售额将超过包装加工业销售额的一半以上，其余的为消费品工业市场。销售额分配在易腐食品和食品上。　　到2002年，袋装内食品以每年20%的速度成为增长最快的部分。使用的主要原料将包括清洁、防雾的封闭材料、高阻隔性薄膜以及广泛使用的收缩薄膜。到2002，在鲜肉包装中，将有近1/3的部分将使用袋式包装。　　当然，包装要求的市场特性、大小和复杂性将造成一段时期内包装材料的多样化。　　随着早餐及宴会用食品的畅销，其包装薄膜将以每年9%的速度成为增长最快的部分。茂合金属作为密封材料正逐渐代替离聚物或乙烯醋酸乙烯酯。尽管一些食品的销售由于其高脂肪以及早餐食用它的人数减少等原因而逐渐减少，但口味、低脂肪的品种仍有助于促进包装薄膜的需求增长。　　对于许多市场，特别是快餐和糖果市场而言，新颖的图案是必要的，但其更要求包装具有较高的防潮性能。这对包装薄膜市场也许具有较为积极的影响。市场还包括谷类食品、宠物食品及咖啡。　　工业品的销售量和销售额是最大的一个领域。保健类包装产品的增长速度最快。使用软包装材料的产品还包括肥皂、化妆品、一次性纸品、及其他零售品。　　总之，柔性包装已渗透到制造领域的每个部分。由硬包装转化而来的柔性包装将继续发展。但速度会慢下来，因为许多最易转化的工作已完成了。预计柔性包装总的发展速度要略快于总的国民产品的发展速度。商情快递2001年12月12日    </p>
+         <content><![CDATA[<p>&nbsp; &nbsp; &nbsp; &nbsp; 一种可以回收利用具有较强的环保性的塑料啤酒瓶，即将在辽宁大连出现。&nbsp; &nbsp; 据了解，目前国外一些大的啤酒厂，都开始部分生产塑料瓶装啤酒，而且技术越来越先进的新型塑料瓶，不仅保持了啤酒自身的香气，还可以回收利用，具有较强的环保性。&nbsp; &nbsp; 据介绍，随着塑料啤酒瓶存在的阻隔性、啤酒风味和贮藏期限等问题的解决，用塑料瓶装啤酒很快会成为现实。中国新闻社 2001年12月12日 &nbsp; &nbsp;</p>
 ]]></content>
          
          
@@ -3086,6 +3275,39 @@
         <tag>塑料包装厂 </tag>
          
          <content><![CDATA[<p>过去中国进口塑料原料对日本和韩国产品的依赖程度高，如20世纪90年代中期前，自韩国的进口量占进口总量的50%。中国努力实现合成树脂进口货源多元化，自1998年韩国产品下降为占30.6%，今年下降为占23.4%，而聚乙烯、聚丙烯韩国产品下降为占14%。与此同时，我自台湾盛东南亚、中东国家的进口量逐年大幅增长，它们的产品在中国进口总量中上升为占33%以上。  (中国开门化工商务网) 2001年12月14日    </p>
+]]></content>
+         
+         
+           
+             
+              <breadCrumb title="news" url="http://www.suliaobaozhuang.net/c/news/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.suliaobaozhuang.net/2014/12/31-news72000_132.html</loc>
+    <lastmod>2015-01-01T14:38:39.000Z</lastmod>
+    <data>
+        <display>
+        <title>软包装的2002年</title>
+        <pubTime>2014-12-31T14:11:42.000Z</pubTime>
+        
+        <tag>吸塑包装 </tag>
+         
+        <tag>吸塑制品 </tag>
+         
+        <tag>吸塑托盘 </tag>
+         
+        <tag>塑料包装 </tag>
+         
+        <tag>塑料包装盒 </tag>
+         
+        <tag>塑料包装厂 </tag>
+         
+         <content><![CDATA[<p>　　到2002年，软包装在食品业的销售额将超过包装加工业销售额的一半以上，其余的为消费品工业市场。销售额分配在易腐食品和食品上。　　到2002年，袋装内食品以每年20%的速度成为增长最快的部分。使用的主要原料将包括清洁、防雾的封闭材料、高阻隔性薄膜以及广泛使用的收缩薄膜。到2002，在鲜肉包装中，将有近1/3的部分将使用袋式包装。　　当然，包装要求的市场特性、大小和复杂性将造成一段时期内包装材料的多样化。　　随着早餐及宴会用食品的畅销，其包装薄膜将以每年9%的速度成为增长最快的部分。茂合金属作为密封材料正逐渐代替离聚物或乙烯醋酸乙烯酯。尽管一些食品的销售由于其高脂肪以及早餐食用它的人数减少等原因而逐渐减少，但口味、低脂肪的品种仍有助于促进包装薄膜的需求增长。　　对于许多市场，特别是快餐和糖果市场而言，新颖的图案是必要的，但其更要求包装具有较高的防潮性能。这对包装薄膜市场也许具有较为积极的影响。市场还包括谷类食品、宠物食品及咖啡。　　工业品的销售量和销售额是最大的一个领域。保健类包装产品的增长速度最快。使用软包装材料的产品还包括肥皂、化妆品、一次性纸品、及其他零售品。　　总之，柔性包装已渗透到制造领域的每个部分。由硬包装转化而来的柔性包装将继续发展。但速度会慢下来，因为许多最易转化的工作已完成了。预计柔性包装总的发展速度要略快于总的国民产品的发展速度。商情快递2001年12月12日    </p>
 ]]></content>
          
          
@@ -3178,9 +3400,100 @@
     </url>
 
     
+  <url>
+    <loc>http://www.suliaobaozhuang.net/products/p1.html</loc>
+    <lastmod>2014-12-30T13:40:48.000Z</lastmod>
+    <data>
+        <display>
+        <title>products p1</title>
+        <pubTime>2014-12-30T04:00:28.000Z</pubTime>
+        
+         <content><![CDATA[<p>categories:</p>
+<ul>
+<li>Diary<br>tags:</li>
+<li>PS3</li>
+<li>Games</li>
+</ul>
+]]></content>
+         
+         
+        </display>
+    </data>
+    </url>
+
     
+  <url>
+    <loc>http://www.suliaobaozhuang.net/products/index.html</loc>
+    <lastmod>2014-12-30T13:38:37.000Z</lastmod>
+    <data>
+        <display>
+        <title>products</title>
+        <pubTime>2014-12-30T04:00:28.000Z</pubTime>
+        
+         <content><![CDATA[]]></content>
+         
+         
+        </display>
+    </data>
+    </url>
+
     
+  <url>
+    <loc>http://www.suliaobaozhuang.net/products/p2.html</loc>
+    <lastmod>2014-12-30T13:37:59.000Z</lastmod>
+    <data>
+        <display>
+        <title>products p2</title>
+        <pubTime>2014-12-30T04:00:28.000Z</pubTime>
+        
+         <content><![CDATA[<p>categories:</p>
+<ul>
+<li>Diary<br>tags:</li>
+<li>PS3</li>
+<li>Games</li>
+</ul>
+]]></content>
+         
+         
+        </display>
+    </data>
+    </url>
+
     
+  <url>
+    <loc>http://www.suliaobaozhuang.net/404.html</loc>
+    <lastmod>2014-12-30T13:31:37.000Z</lastmod>
+    <data>
+        <display>
+        <title></title>
+        <pubTime>2014-12-30T13:02:49.000Z</pubTime>
+        
+         <content><![CDATA[<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>404</title>
+</head>
+<body>
+<div id="container">
+  
+  
+    <h1>
+      <a href="/2014/12-30-about/">404</a>
+    </h1>
+  
+
+
+</div>
+</body>
+</html>
+]]></content>
+         
+         
+        </display>
+    </data>
+    </url>
+
     
   <url>
     <loc>http://www.suliaobaozhuang.net/2014/12/30-about.html</loc>
@@ -3191,198 +3504,6 @@
         <pubTime>2014-12-30T03:29:46.000Z</pubTime>
         
          <content><![CDATA[]]></content>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-    
-    
-  <url>
-    <loc>http://www.suliaobaozhuang.net/2014/12/22-xinjianwenzhang.html</loc>
-    <lastmod>2014-12-27T13:24:26.000Z</lastmod>
-    <data>
-        <display>
-        <title>测试MD的语法</title>
-        <pubTime>2014-12-22T15:16:23.000Z</pubTime>
-        
-         <content><![CDATA[<h1 id="大字一">大字一</h1>
-<p>内容测试。</p>
-<h2 id="大字二">大字二</h2>
-<ul>
-<li>写几个<strong>粗体字</strong>测试。=&gt; <a href="https://github.com/chinamobiler" target="_blank" rel="external">点击链接测试</a></li>
-</ul>
-<h2 id="大字二-1">大字二</h2>
-<ul>
-<li><a href="#演示想">演示想</a></li>
-</ul>
-<h2 id="演示想"><a name="演示想">演示想</a></h2>
-<p>你可以点击<a href="http://xxx/" target="_blank" rel="external">这里</a>，查看演示。</p>
-<h2 id="安装"><a name="安装">安装</a></h2>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">+修改主题的设置文件`_config.yml`，把`theme`的值设置为`landscape-plus`</div></pre></td></tr></table></figure>
-
-<p><strong>问</strong>：Demo看起来很赞，我要<strong>怎么使用landscape+主题？</strong></p>
-<blockquote>
-<p>按照上方的<a href="http://ggg.com" target="_blank" rel="external">步骤</a>进行<code>安装</code>、<code>启用</code>、<code>更新</code>。</p>
-</blockquote>
-<h2 id="网站列表"><a name="网站列表">网站列表</a></h2>
-<ul>
-<li><strong>[hexo-theme-landscape-plus]</strong> - The demo site of Landscape-plus theme.</li>
-</ul>
-]]></content>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.suliaobaozhuang.net/2014/12/22-test1.html</loc>
-    <lastmod>2014-12-27T13:03:22.000Z</lastmod>
-    <data>
-        <display>
-        <title>test1</title>
-        <pubTime>2014-12-22T13:13:32.000Z</pubTime>
-        
-         <content><![CDATA[<h1 id="Landscape_plus">Landscape plus</h1>
-<p>针对中国大陆地区对hexo官方主题landscape进行优化。</p>
-<h2 id="所有新特性">所有新特性</h2>
-<ul>
-<li>根据国情，<strong>去掉Google的库</strong>，改用cloudflare的cdn，打开页面不再卡住了。=&gt; <a href="https://github.com/xiangming/landscape-plus/issues/3" target="_blank" rel="external">参与国内cdn的讨论</a></li>
-<li>增加了 <strong>语言包</strong> 。（支持英文、中文简体和中文繁体。）</li>
-<li>代码高亮，<strong>采用Monokai</strong>，熟悉SublimeText的朋友一定不陌生。</li>
-<li>增加了 <strong>友情链接</strong> widget。（已默认开启，修改方法看下面的<a href="#常见问题">常见问题</a>。）</li>
-<li>不使用header里面的大图，节省带宽，页面加载更快。（大图文件还在，恢复方法看下面的<a href="#常见问题">常见问题</a>。）</li>
-<li>修改了原主题的 <strong>配色</strong> 和部分markdown样式（blockquote/code…）</li>
-<li>集成 <strong>多说评论模块</strong> 。（开启方法看下面的<a href="#常见问题">常见问题</a>。）</li>
-<li>集成 <strong>百度分享模块</strong> 。（已默认开启，详情看下面的<a href="#常见问题">常见问题</a>。）</li>
-<li>增加对 <strong>IE8</strong> 的支持。</li>
-<li>集成 <strong>mathjax</strong>，即latex数学公式的支持。（感谢 @Svtter 的<a href="https://github.com/xiangming/landscape-plus/pull/35" target="_blank" rel="external">pull request</a>）</li>
-</ul>
-<p>主题还在调整中，欢迎<a href="https://github.com/xiangming/landscape-plus/issues/new" target="_blank" rel="external">open issue</a>来提建议，参与讨论。</p>
-<h2 id="文档目录">文档目录</h2>
-<ul>
-<li><a href="#演示">演示</a></li>
-<li><a href="#安装">安装</a></li>
-<li><a href="#启用">启用</a></li>
-<li><a href="#更新">更新</a></li>
-<li><a href="#配置">配置</a></li>
-<li><a href="#常见问题">常见问题</a></li>
-<li><a href="#更新日志">更新日志</a></li>
-<li><a href="#网站列表">网站列表</a></li>
-</ul>
-<h2 id="演示"><a name="演示">演示</a></h2>
-<p>你可以点击<a href="http://jasonxiang.com/landscape-plus/" target="_blank" rel="external">这里</a>，查看演示。</p>
-<h2 id="安装"><a name="安装">安装</a></h2>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git clone https://github.com/xiangming/landscape-plus.git themes/landscape-plus</div></pre></td></tr></table></figure>
-
-<p><strong>Landscape plus 需要 Hexo 2.7 及以上版本.</strong></p>
-<h2 id="启用"><a name="启用">启用</a></h2>
-<p>修改主题的设置文件<code>_config.yml</code>，把<code>theme</code>的值设置为<code>landscape-plus</code></p>
-<h2 id="更新"><a name="更新">更新</a></h2>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> themes/landscape-plus</div><div class="line">git pull</div></pre></td></tr></table></figure>
-
-<h2 id="配置"><a name="配置">配置</a></h2>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line"><span class="preprocessor"># Header</span></div><div class="line"><span class="label">menu:</span></div><div class="line">  Home: /</div><div class="line">  Archives: /archives</div><div class="line"><span class="label">rss:</span> /atom.xml</div><div class="line"></div><div class="line"><span class="preprocessor"># Content</span></div><div class="line"><span class="label">excerpt_link:</span> Read More</div><div class="line"><span class="label">fancybox:</span> false</div><div class="line"></div><div class="line"><span class="preprocessor"># Sidebar</span></div><div class="line"><span class="label">sidebar:</span> right</div><div class="line"><span class="label">widgets:</span></div><div class="line">- category</div><div class="line">- tag</div><div class="line">- tagcloud</div><div class="line">- archive</div><div class="line">- recent_posts</div><div class="line">- links</div><div class="line"></div><div class="line"><span class="preprocessor"># Links</span></div><div class="line"><span class="label">links:</span></div><div class="line">  主题作者: http://xiguabaobao.com</div><div class="line">  热前端: http://reqianduan.com</div><div class="line"></div><div class="line"><span class="preprocessor"># Miscellaneous</span></div><div class="line"><span class="label">google_analytics:</span></div><div class="line"><span class="label">favicon:</span> /favicon.png</div><div class="line"><span class="label">twitter:</span></div><div class="line"><span class="label">google_plus:</span></div><div class="line"><span class="label">fb_admins:</span> </div><div class="line"><span class="label">fb_app_id:</span></div><div class="line"></div><div class="line"><span class="preprocessor"># Duoshuo</span></div><div class="line"><span class="label">duoshuo_shortname:</span> </div><div class="line"></div><div class="line"><span class="preprocessor"># Baidu share</span></div><div class="line"><span class="label">baidushare:</span> true</div></pre></td></tr></table></figure>
-
-<ul>
-<li><code>links</code> - 友情链接</li>
-<li><code>duoshuo_shortname</code> - 多说评论id</li>
-<li><code>baidushare</code> - 是否开启百度分享</li>
-</ul>
-<h2 id="常见问题"><a name="常见问题">常见问题</a></h2>
-<p><strong>问</strong>：Demo看起来很赞，我要<strong>怎么使用landscape+主题？</strong></p>
-<blockquote>
-<p>按照上方的步骤进行<code>安装</code>、<code>启用</code>、<code>更新</code>。</p>
-</blockquote>
-<p><strong>问</strong>：怎么提建议？</p>
-<blockquote>
-<p>主题还在调整中，欢迎<a href="https://github.com/xiangming/landscape-plus/issues/new" target="_blank" rel="external">open issue</a>来提建议，参与讨论。</p>
-</blockquote>
-<p><strong>问</strong>：怎么添加友情链接？</p>
-<blockquote>
-<p>修改<code>themes/landscape-plus/_config.yml</code>中的<code>links</code>。</p>
-</blockquote>
-<p><strong>问</strong>：我喜欢原主题顶部的大图，如何恢复？</p>
-<blockquote>
-<p><code>themes/landscape-plus/source/css/_partial/header.styl</code>，取消第33行的注释。</p>
-</blockquote>
-<p><strong>问</strong>：我是中国人，但是我喜欢英语？</p>
-<blockquote>
-<p>配置你的hexo源文件的<code>_config.yml</code>，去掉<code>language: zh-CN</code>。</p>
-</blockquote>
-<p><strong>问</strong>：Landscape plus主题的字体配色太闪眼睛了，我怎么换回原主题的样式？</p>
-<blockquote>
-<p>请参考这条<a href="https://github.com/xiangming/landscape-plus/issues/13" target="_blank" rel="external">issue</a>进行配置。</p>
-</blockquote>
-<p><strong>问</strong>：如何开启多说评论模块？</p>
-<blockquote>
-<p>修改<code>themes/landscape-plus\_config.yml</code>，填写你的多说id即可。（主题会自动启用多说评论，忽略hexo默认的disqus。）</p>
-</blockquote>
-<p><strong>问</strong>：如何开启百度分享模块？</p>
-<blockquote>
-<p>修改<code>themes/landscape-plus\_config.yml</code>，将<code>baidushare</code>设置为<code>true</code>即可。（已默认开启）</p>
-</blockquote>
-<p><strong>问</strong>：如何使用RSS分享功能？</p>
-<blockquote>
-<p>请参考这条<a href="https://github.com/xiangming/landscape-plus/issues/31" target="_blank" rel="external">issue</a>进行配置。</p>
-</blockquote>
-<h2 id="更新日志"><a name="更新日志">更新日志</a></h2>
-<h3 id="v1-0-3">v1.0.3</h3>
-<ul>
-<li>增加对 <strong>IE8</strong> 的支持</li>
-<li>集成 <strong>mathjax</strong> ，即latex数学公式的支持。（感谢 @Svtter 的<a href="https://github.com/xiangming/landscape-plus/pull/35" target="_blank" rel="external">pull request</a>）</li>
-</ul>
-<h3 id="v1-0-2">v1.0.2</h3>
-<ul>
-<li>修改: 优化Generate速度，refs #13</li>
-</ul>
-<h3 id="v1-0-1">v1.0.1</h3>
-<ul>
-<li>新增: 百度分享模块</li>
-</ul>
-<h3 id="v1-0-0">v1.0.0</h3>
-<ul>
-<li>修改：根据国情，去掉Google的库，改用cloudflare的cdn</li>
-<li>新增：语言包</li>
-<li>修改：代码高亮配色修改为<code>Monokai</code></li>
-<li>新增：友情链接</li>
-<li>修改：隐藏顶部大图</li>
-<li>修改：主题配色和部分markdown样式</li>
-<li>新增：多说评论模块</li>
-</ul>
-<h2 id="网站列表"><a name="网站列表">网站列表</a></h2>
-<ul>
-<li><strong><a href="http://jasonxiang.com/landscape-plus/" target="_blank" rel="external">hexo-theme-landscape-plus</a></strong> - The demo site of Landscape-plus theme.</li>
-<li><strong><a href="http://bawn.github.io/" target="_blank" rel="external">bawn</a></strong> - iOS开发博客</li>
-<li><strong><a href="http://jiatang.me" target="_blank" rel="external">假唐</a></strong> - 个人博客</li>
-<li><strong><a href="http://www.tangyumeng.com" target="_blank" rel="external">tangyumeng</a></strong> - tangyumeng’s blog</li>
-<li><strong><a href="http://www.novsec.com/" target="_blank" rel="external">novsec</a></strong> - novsec’s blog</li>
-<li><strong><a href="http://xfeng.me/" target="_blank" rel="external">joysboy</a></strong> - 小峰网络遨游记</li>
-<li><strong><a href="http://silenceage.com/" target="_blank" rel="external">沉默紀</a></strong> - Silenceage</li>
-<li><strong><a href="http://artwalk.github.io/" target="_blank" rel="external">游走的艺术</a></strong> - Artwalk’s Blog</li>
-<li><strong><a href="http://codermango.com/" target="_blank" rel="external">Mark’s Blog</a></strong> - Life and Technology</li>
-<li><strong><a href="http://lszb811.com/" target="_blank" rel="external">一盏灯，一部随身听，一本书。。。。。。</a></strong> - This is 洛桑扎巴’s personal blog</li>
-<li><strong><a href="https://dsy.im" target="_blank" rel="external">YumeMichi’s Blog</a></strong> - 随心、随想</li>
-<li><strong><a href="http://litengfei.com" target="_blank" rel="external">小新技术随想</a></strong> - 技术，生活，梦想</li>
-<li><strong><a href="http://nshen.net" target="_blank" rel="external">N神的研究所</a></strong> - 我正在考虑在这里写点啥…</li>
-<li><strong><a href="http://mclspace.com" target="_blank" rel="external">Mcl’s Space</a></strong> -MCL 的空间</li>
-<li><strong><a href="http://lihongn.tk" target="_blank" rel="external">Hello,world</a></strong> - 红红的个人博客</li>
-<li><strong><a href="http://twocucao.github.io/" target="_blank" rel="external">SkyCoder‘s Blog</a></strong> - SkyCoder‘s Blog</li>
-<li><strong><a href="http://laiyilong.github.io/" target="_blank" rel="external">Yilong’s Blog</a></strong> - Keep It simple,small…</li>
-<li><strong><a href="http://yuechang.github.io/" target="_blank" rel="external">漠北空城</a></strong> - 做好自己</li>
-<li><strong><a href="http://cifer.me" target="_blank" rel="external">Just for Free</a></strong> - 自由为王, 一生只为自由的活着</li>
-<li><strong><a href="http://wurang.net/" target="_blank" rel="external">Rang</a></strong> - Rang</li>
-<li><strong><a href="http://beeder.me/" target="_blank" rel="external">Beeder’s Blog</a></strong> - Beeder’s Blog</li>
-<li><strong><a href="http://www.peng8.net/" target="_blank" rel="external">peng8.net</a></strong> - peng8.net 技术博客.</li>
-</ul>
-<p>如果你的网站正在使用<strong>landscape-plus</strong>主题，欢迎将网址添加到<a href="https://github.com/xiangming/landscape-plus/wiki" target="_blank" rel="external">wiki的网站列表</a>，我会不定期进行整理。</p>
-]]></content>
          
          
            
